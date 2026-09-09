@@ -22,8 +22,8 @@ MonoBehaviour:
   abilityAnimation: Shout
   range: 9999
   castTime: 0
-  abilityCooldown: 3
-  abilityCost: 30
+  abilityCooldown: 15
+  abilityCost: 40
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 4
     - rid: 1002
       type: {class: BuffNode, ns: , asm: Assembly-CSharp}
       data:
