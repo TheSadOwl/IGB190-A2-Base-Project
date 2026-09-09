@@ -21252,7 +21252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40095,7 +40095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40116,11 +40116,11 @@ MonoBehaviour:
   baseAttacksPerSecond: 1.8
   baseMaxHealth: 200
   baseMaxResource: 100
-  baseMovementSpeed: 3.5
+  baseMovementSpeed: 4.5
   baseArmor: 0
-  baseCriticalStrikeChance: 0.1
+  baseCriticalStrikeChance: 0.15
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 20
+  baseHealthRegen: 5
   baseResourceRegen: 2
   baseAttackRange: 2
   health: 500
