@@ -225,7 +225,7 @@ MonoBehaviour:
   unitName: Boss
   baseDamage: 30
   baseAttacksPerSecond: 2
-  baseMaxHealth: 600
+  baseMaxHealth: 900
   baseMaxResource: 100
   baseMovementSpeed: 2
   baseArmor: 0

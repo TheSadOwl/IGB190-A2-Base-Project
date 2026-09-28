@@ -26,7 +26,7 @@ MonoBehaviour:
   abilityCost: 5
   movementLock: 1
   animationActivationPosition: 0.5
-  canMoveWhileCasting: 0
+  canMoveWhileCasting: 1
   hasSpecificCastTime: 0
   cooldownIsAtackSpeed: 1
   abilityGeneratesResource: 1
@@ -44,26 +44,27 @@ MonoBehaviour:
     - rid: -2
       type: {class: , ns: , asm: }
     - rid: 1000
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
+        returnType: 2
+        tempName: 
+        functionName: RotateProjectile
+        functionDescription: Projectile/Rotate Projectile
+        functionDynamicDescription: Rotate $ by $
+        functionEvaluators:
+        - rid: 1005
+        - rid: 1006
         parentNode:
           rid: -2
         parentNodeID: -1
-        indent: 0
-        presetName: Casting Unit
+        indent: 1
+        presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
+        nodeIcon: Projectile
+        allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 0}
     - rid: 1001
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -124,6 +125,69 @@ MonoBehaviour:
         parentNodeID: 0
         indent: 0
         presetName: Event Projectile
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 1005
+      type: {class: ProjectileNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Projectile
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1000
+        parentNodeID: 0
+        indent: 0
+        presetName: Last Created Projectile
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 1006
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1000
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: "\xBA"
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 1007
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Casting Unit
         variableName: 
         stringSuffix: 
         nodeIcon: 
@@ -198,7 +262,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.1
+        value: 0.05
     - rid: 248813549377814826
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -251,7 +315,7 @@ MonoBehaviour:
         functionDescription: Unit/Cast Point of Unit
         functionDynamicDescription: Cast Point of $
         functionEvaluators:
-        - rid: 1000
+        - rid: 1007
         parentNode:
           rid: 248813549377814826
         parentNodeID: 1
@@ -279,6 +343,7 @@ MonoBehaviour:
           - rid: 3532775480752079012
           - rid: 248813549377814826
           - rid: 1908414250698145922
+          - rid: 1000
           - rid: 248813481411739782
           - rid: 3958016564238483456
         - scriptName: Projectile Hit

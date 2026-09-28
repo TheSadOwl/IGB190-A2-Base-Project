@@ -12892,7 +12892,7 @@ MonoBehaviour:
   baseAttacksPerSecond: 1.5
   baseMaxHealth: 200
   baseMaxResource: 200
-  baseMovementSpeed: 3
+  baseMovementSpeed: 4.5
   baseArmor: 0
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
@@ -21252,7 +21252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21273,7 +21273,7 @@ MonoBehaviour:
   baseAttacksPerSecond: 1.5
   baseMaxHealth: 200
   baseMaxResource: 100
-  baseMovementSpeed: 3
+  baseMovementSpeed: 4.5
   baseArmor: 0
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
@@ -40095,7 +40095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40116,7 +40116,7 @@ MonoBehaviour:
   baseAttacksPerSecond: 1.8
   baseMaxHealth: 200
   baseMaxResource: 100
-  baseMovementSpeed: 3.5
+  baseMovementSpeed: 5.25
   baseArmor: 0
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
@@ -43472,9 +43472,9 @@ MonoBehaviour:
     moveRightKeybind: 100
     abilityKeybinds: 430100004401000071000000650000007200000074000000
   _monsterValues:
-    baseGoldDropAmountMinimum: 10
-    baseGoldDropAmountMaximum: 20
-    goldDropChance: 0.2
+    baseGoldDropAmountMinimum: 5
+    baseGoldDropAmountMaximum: 10
+    goldDropChance: 1
     unempoweredMonsterCommonDropChance: 0
     unempoweredMonsterRareDropChance: 0
     unempoweredMonsterLegendaryDropChance: 0
