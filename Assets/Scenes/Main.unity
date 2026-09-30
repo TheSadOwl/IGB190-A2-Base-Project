@@ -1222,6 +1222,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59044960}
   m_CullTransparentMesh: 1
+--- !u!4 &62608927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 0a6654ccc53066f45ac7f1d6caa6100b, type: 3}
+  m_PrefabInstance: {fileID: 610043879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &68373656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,6 +4887,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243519658}
   m_CullTransparentMesh: 1
+--- !u!1001 &251127045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 62608927}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fe8e68d0fff38304889b6beb52945c64, type: 2}
+    - target: {fileID: 919132149155446097, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+      propertyPath: m_Name
+      value: dagger_low
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+--- !u!4 &251127046 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7f347d9307e29b4a8bc93c9da72f8be, type: 3}
+  m_PrefabInstance: {fileID: 251127045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &251733306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12799,7 +12882,10 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: 0a6654ccc53066f45ac7f1d6caa6100b, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1852576806548013000, guid: 0a6654ccc53066f45ac7f1d6caa6100b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 251127046}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a6654ccc53066f45ac7f1d6caa6100b, type: 3}
 --- !u!4 &610043880 stripped
@@ -14746,7 +14832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &726264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14764,27 +14850,24 @@ MonoBehaviour:
   colorFade: {r: 0, g: 0, b: 0, a: 0}
   unitName: Rogue
   baseDamage: 20
-  baseAttacksPerSecond: 1.5
+  baseAttacksPerSecond: 3
   baseMaxHealth: 200
   baseMaxResource: 100
-  baseMovementSpeed: 4.5
+  baseMovementSpeed: 6
   baseArmor: 0
-  baseCriticalStrikeChance: 0.1
+  baseCriticalStrikeChance: 0.2
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 20
-  baseResourceRegen: 0
-  baseAttackRange: 2.5
+  baseHealthRegen: 10
+  baseResourceRegen: 2
+  baseAttackRange: 1
   health: 500
   resource: 0
   abilities:
-  - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
-  - {fileID: 11400000, guid: 2f1f41c2a1067594e8376bffc6d6f7a2, type: 2}
+  - {fileID: 11400000, guid: 192df1b447e297e4ba35bf1c1fb27832, type: 2}
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
-  - {fileID: 11400000, guid: 2c0d2df3b515c4d47aa500f8d2a596b8, type: 2}
-  - {fileID: 11400000, guid: 5180f7ad42a7a934282a62699a87c731, type: 2}
   lastAbilityCast: {fileID: 0}
   unitCanBeForceMoved: 1
-  handPoint: {fileID: 0}
+  handPoint: {fileID: 62608927}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   origin: {fileID: 920272653}
@@ -14809,8 +14892,8 @@ MonoBehaviour:
   leftClickAbility: {fileID: 0}
   rightClickAlsoMoves: 1
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
-  resourceName: Rage
-  resourceMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
+  resourceName: Energy
+  resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
   bonusDamagePerLevel: 0
   bonusHealthPerLevel: 0
   bonusMovementSpeedPerLevel: 0
@@ -40465,7 +40548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40552,7 +40635,7 @@ NavMeshAgent:
   m_Speed: 3.5
   m_Acceleration: 9999
   avoidancePriority: 1
-  m_AngularSpeed: 0
+  m_AngularSpeed: 9999
   m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
