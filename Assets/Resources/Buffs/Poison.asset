@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Poison
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Deal 1% of Max Health of Unit every second.
+  buffDescription: Reduce Damage Taken by 10%.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 1397435139, guid: aa6eceab29ed221468872af3d972339a, type: 3}
@@ -21,14 +21,21 @@ MonoBehaviour:
   buffVisibleInUI: 1
   buffHasDuration: 1
   addingStacksRefreshesDuration: 1
-  buffCurrentDuration: 1
-  buffMaxDuration: 1
+  buffCurrentDuration: 5
+  buffMaxDuration: 5
   buffCurrentStacks: 0
-  buffMaximumStacks: 5
+  buffMaximumStacks: 10
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
-  buffScale: 0
-  buffStatBonuses: []
+  buffScale: 5
+  buffStatBonuses:
+  - stat: 2
+    modifier:
+      Value: 0.1
+      RemoveAt: 0
+      IsPercentage: 1
+      Label: 
+      Stacks: 0
   visualEffect: {fileID: 0}
   owner: {fileID: 0}
   applier: {fileID: 0}
