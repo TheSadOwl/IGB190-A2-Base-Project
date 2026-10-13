@@ -1,0 +1,487 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
+  m_Name: Forgotten Fury
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemDescription: Increase Unit's Damage by 20% and Attack Speed by 10% when casting
+    an Ability.
+  itemTag: 
+  itemFlavourText: 
+  classRequirement: Rogue
+  itemIcon: {fileID: 21300000, guid: 26326872d54191a4cad83dadabef5ec8, type: 3}
+  itemType: 2
+  itemRarity: 2
+  itemCost: 500
+  itemSet: {fileID: 0}
+  randomStatCount: 2
+  guaranteedStats:
+  - stat: 0
+    minimum: 23
+    maximum: 23
+    isPercent: 0
+  - stat: 3
+    minimum: 0.04
+    maximum: 0.04
+    isPercent: 1
+  - stat: 10
+    minimum: 0.06
+    maximum: 0.06
+    isPercent: 0
+  randomisableStats:
+  - stat: 0
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 1
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 2
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 4
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 6
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 11
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 0
+  - stat: 12
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  minimumDropLevel: 0
+  canPurchaseInShop: 1
+  canDropOffMonster: 1
+  template: {fileID: 0}
+  engine:
+    scripts:
+    - scriptName: Item Equipped
+      scriptUID: 1641795525
+      hasWait: 0
+      reportErrors: 1
+      eventNodes:
+      - rid: 123489733316968448
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Item Unequipped
+      scriptUID: 160577663
+      hasWait: 0
+      reportErrors: 1
+      eventNodes:
+      - rid: 123489733316968449
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Unit Cast Ability
+      scriptUID: 1933016570
+      hasWait: 0
+      reportErrors: 1
+      eventNodes:
+      - rid: 1005
+      conditionNodes: []
+      actionNodes:
+      - rid: 1001
+      - rid: 1010
+      - rid: 1006
+    - scriptName: Unit End Cast Ability
+      scriptUID: 735405424
+      hasWait: 0
+      reportErrors: 1
+      eventNodes:
+      - rid: 1000
+      conditionNodes: []
+      actionNodes:
+      - rid: 1003
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1000
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: UnitFinishCast
+        functionDescription: Ability/When a unit finishes casting specific ability
+        functionDynamicDescription: 'When Unit Finishes Casting $ (Presets: <color=yellow>Casting
+          Unit</color>, <color=yellow>Ability Cast</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Casting Unit
+        - Ability Cast
+    - rid: 1001
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowDebugMessage
+        functionDescription: Debug/Show Debug Message
+        functionDynamicDescription: Show a debug message printing $
+        functionEvaluators:
+        - rid: 1002
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1002
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Message
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1001
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Unit Starts Cast Ability
+        options: []
+    - rid: 1003
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShowDebugMessage
+        functionDescription: Debug/Show Debug Message
+        functionDynamicDescription: Show a debug message printing $
+        functionEvaluators:
+        - rid: 1004
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: UI
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1004
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Message
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1003
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Unit End Cast Ability
+        options: []
+    - rid: 1005
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: UnitStartCast
+        functionDescription: Ability/When a unit starts casting specific ability
+        functionDynamicDescription: 'When Unit Starts Casting $ (Presets: <color=yellow>Casting
+          Unit</color>, <color=yellow>Ability Cast</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Casting Unit
+        - Ability Cast
+    - rid: 1006
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddBuff
+        functionDescription: Unit/Buff/Add Buff to Unit(s)
+        functionDynamicDescription: 'Apply $ to $ (Starting Stack Count: $)'
+        functionEvaluators:
+        - rid: 1007
+        - rid: 1008
+        - rid: 1009
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1007
+      type: {class: BuffNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Buff
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1006
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 2c29ef4dca14c9e4dab0124fca5cea81, type: 2}
+    - rid: 1008
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit(s)
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1006
+        parentNodeID: 1
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1009
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1006
+        parentNodeID: 2
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1010
+      type: {class: NestingActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DoActionsIfBool
+        functionDescription: Flow/If Statement
+        functionDynamicDescription: Do actions if $
+        functionEvaluators:
+        - rid: 1011
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1011
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Bool
+        functionName: UnitComparison
+        functionDescription: Comparisons/Unit Comparison
+        functionDynamicDescription: $ $ $
+        functionEvaluators:
+        - rid: 1012
+        - rid: 1013
+        - rid: 1014
+        parentNode:
+          rid: 1010
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1012
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+    - rid: 1013
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Equal To
+        options:
+        - Equal To
+        - Not Equal To
+    - rid: 1014
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+    - rid: 123489733316968448
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptLoaded
+        functionDescription: Time/On script loaded
+        functionDynamicDescription: On script loaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 123489733316968449
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptUnloaded
+        functionDescription: Time/On script unloaded
+        functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
