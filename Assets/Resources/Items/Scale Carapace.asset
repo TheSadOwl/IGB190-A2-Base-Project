@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemDescription: 
   itemTag: 
-  itemFlavourText: Coated in tough scales belonging to some abhorrent creature.
+  itemFlavourText: Coated in tough scales belonging to some once grand creature.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: b9ff5a91fb0b29f4d86d7000bf7a0b7c, type: 3}
   itemType: 3
@@ -48,10 +48,6 @@ MonoBehaviour:
     maximum: 0.14
     isPercent: 1
   randomisableStats:
-  - stat: 0
-    minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
   - stat: 1
     minimum: 0.05
     maximum: 0.1
