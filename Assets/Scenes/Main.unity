@@ -14832,7 +14832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &726264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21677,7 +21677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21694,13 +21694,13 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
   unitName: Barbarian
-  baseDamage: 50
+  baseDamage: 30
   baseAttacksPerSecond: 1.5
   baseMaxHealth: 400
   baseMaxResource: 100
   baseMovementSpeed: 4.5
   baseArmor: 15
-  baseCriticalStrikeChance: 0.1
+  baseCriticalStrikeChance: 0.05
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 0
