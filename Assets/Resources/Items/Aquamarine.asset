@@ -12,18 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Aquamarine
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: 
+  itemDescription: Using an ability applies the Aqueous buff, increasing movement
+    speed by 20% per stack and reducing damage taken by 25%.
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A prismatic shine radiates from within.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 3
   itemRarity: 2
-  itemCost: 0
+  itemCost: 500
   itemSet: {fileID: 0}
-  randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
+  randomStatCount: 2
+  guaranteedStats:
+  - stat: 1
+    minimum: 33
+    maximum: 33
+    isPercent: 0
+  - stat: 4
+    minimum: 125
+    maximum: 125
+    isPercent: 0
+  - stat: 7
+    minimum: 0.08
+    maximum: 0.08
+    isPercent: 1
+  - stat: 8
+    minimum: 0.08
+    maximum: 0.08
+    isPercent: 1
+  randomisableStats:
+  - stat: 1
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 4
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 2
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 6
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 10
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 0
+  - stat: 11
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 0
+  - stat: 12
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1

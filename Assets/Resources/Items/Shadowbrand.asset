@@ -61,12 +61,12 @@ MonoBehaviour:
     maximum: 0.05
     isPercent: 1
   - stat: 10
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 0
-  - stat: 11
     minimum: 0.01
     maximum: 0.05
+    isPercent: 0
+  - stat: 11
+    minimum: 0.05
+    maximum: 0.1
     isPercent: 0
   - stat: 12
     minimum: 0.01
