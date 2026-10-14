@@ -13076,7 +13076,7 @@ MonoBehaviour:
   baseMaxHealth: 350
   baseMaxResource: 200
   baseMovementSpeed: 4.5
-  baseArmor: 75
+  baseArmor: 10
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
@@ -14854,7 +14854,7 @@ MonoBehaviour:
   baseMaxHealth: 300
   baseMaxResource: 100
   baseMovementSpeed: 6
-  baseArmor: 1000
+  baseArmor: 10
   baseCriticalStrikeChance: 0.2
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 10
@@ -21699,7 +21699,7 @@ MonoBehaviour:
   baseMaxHealth: 400
   baseMaxResource: 100
   baseMovementSpeed: 4.5
-  baseArmor: 150
+  baseArmor: 15
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
@@ -40573,7 +40573,7 @@ MonoBehaviour:
   baseMaxHealth: 350
   baseMaxResource: 100
   baseMovementSpeed: 5.25
-  baseArmor: 100
+  baseArmor: 10
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
@@ -43948,8 +43948,8 @@ MonoBehaviour:
     startingXPPerLevel: 50
     additionalMaxXPPerLevel: 50
   _monsterScalingValues:
-    increasedHealthPerPlayerLevel: 0.5
-    increasedDamagePerPlayerLevel: 0.25
+    increasedHealthPerPlayerLevel: 0.1
+    increasedDamagePerPlayerLevel: 0.1
   _healthGlobeValues:
     baseHealthGlobeChance: 0
     reducedChancePerExistingGlobe: 0
@@ -43966,20 +43966,20 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: 19.709665
+        outSlope: 19.709665
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
-        outWeight: 0
+        outWeight: 0.12704726
       - serializedVersion: 3
-        time: 0.06967924
-        value: 0.9966746
-        inSlope: 1.4643875
-        outSlope: 1.4643875
+        time: 0.07048795
+        value: 1.0003366
+        inSlope: -1.8157659
+        outSlope: -1.8157659
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.2524053
+        inWeight: 0.34515566
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2

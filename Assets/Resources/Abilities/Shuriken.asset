@@ -33,7 +33,7 @@ MonoBehaviour:
   requiresLineOfSight: 0
   canUpdateTargetWhileCasting: 0
   castAtClosestPointInRange: 0
-  castCompleteSound: {fileID: 0}
+  castCompleteSound: {fileID: 8300000, guid: d431758d9381dd8448702a22c11f9c01, type: 3}
   castCompleteSoundVolume: 1
   needsReminderFlash: 0
   isUnlocked: 1
@@ -410,7 +410,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 250
+        value: 100
     - rid: 1016
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:

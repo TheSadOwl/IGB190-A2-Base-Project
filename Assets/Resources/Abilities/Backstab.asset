@@ -17,9 +17,9 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 832f5387d63fe1e45ae1a2513eb95570, type: 3}
   targetMode: 2
-  abilityDescription: Teleport on to the target stunning them and dealing 50% damage
-    and 20% to nearby enemies. If you kill an Unit, refresh this ability.
-  abilityAnimation: Roll
+  abilityDescription: Teleport on to the location stunning them and dealing 100%
+    damage and 50% to nearby enemies. If you kill an Unit reduce cooldown by 5s.
+  abilityAnimation: One Hand Slash
   range: 6
   castTime: 0
   abilityCooldown: 10
@@ -182,13 +182,12 @@ MonoBehaviour:
       data:
         returnType: 2
         tempName: 
-        functionName: MoveUnitsOverTime
-        functionDescription: Unit/Movement/Move Unit(s) Over Time
-        functionDynamicDescription: Move $ to $ over $
+        functionName: Play2DSound
+        functionDescription: Audio/Play Sound
+        functionDynamicDescription: Play $ at $ volume
         functionEvaluators:
         - rid: 1007
         - rid: 1008
-        - rid: 1009
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -196,15 +195,15 @@ MonoBehaviour:
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: Unit
+        nodeIcon: Audio
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
     - rid: 1007
-      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      type: {class: AudioNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 4
-        tempName: Unit Group
+        returnType: 0
+        tempName: Audio Clip
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
@@ -213,36 +212,15 @@ MonoBehaviour:
           rid: 1006
         parentNodeID: 0
         indent: 0
-        presetName: Casting Unit
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        allowSingleUnit: 0
-    - rid: 1008
-      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Location
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1006
-        parentNodeID: 1
-        indent: 0
-        presetName: Target Unit
+        presetName: 
         variableName: 
         stringSuffix: 
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 0, y: 0, z: 0}
-    - rid: 1009
+        value: {fileID: 8300000, guid: 323e15cfe809e114ab92c9f4b25e8bc2, type: 3}
+    - rid: 1008
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -253,16 +231,16 @@ MonoBehaviour:
         functionEvaluators: []
         parentNode:
           rid: 1006
-        parentNodeID: 2
+        parentNodeID: 1
         indent: 0
         presetName: 
         variableName: 
-        stringSuffix: s
+        stringSuffix: '%'
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.1
+        value: 50
     - rid: 1010
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -326,7 +304,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.1
+        value: 0.5
     - rid: 1013
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -369,7 +347,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 30
+        value: 50
     - rid: 1015
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -437,7 +415,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 20
+        value: 50
     - rid: 1018
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -631,7 +609,7 @@ MonoBehaviour:
           rid: 1024
         parentNodeID: 1
         indent: 0
-        presetName: Player
+        presetName: Killing Unit
         variableName: 
         stringSuffix: 
         nodeIcon: 
@@ -743,7 +721,71 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 10
+        value: 5
+    - rid: 1032
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: TeleportUnits
+        functionDescription: Unit/Movement/Teleport Unit(s)
+        functionDynamicDescription: Teleport $ to $
+        functionEvaluators:
+        - rid: 1033
+        - rid: 1034
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1033
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit Group
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1032
+        parentNodeID: 0
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1034
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Location
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1032
+        parentNodeID: 1
+        indent: 0
+        presetName: Target Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
     - rid: 123489723703361795
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -756,11 +798,12 @@ MonoBehaviour:
           - rid: 123489723703361796
           conditionNodes: []
           actionNodes:
-          - rid: 1006
+          - rid: 1032
           - rid: 1016
           - rid: 1013
           - rid: 1010
           - rid: 1000
+          - rid: 1006
         - scriptName: Passive
           scriptUID: 852647673
           hasWait: 0
