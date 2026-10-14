@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Echoes of the End
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Reduce unit's cooldown by 1s for every unit killed with that ability.
+  itemDescription: Reduces ability cooldown by 1s for every enemy killed using that
+    ability.
   itemTag: 
-  itemFlavourText: 
-  classRequirement: Rogue
+  itemFlavourText: Whispers of the end times.
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 33ebab032307d64478a8023413e8a718, type: 3}
   itemType: 2
   itemRarity: 2
@@ -24,17 +25,21 @@ MonoBehaviour:
   randomStatCount: 2
   guaranteedStats:
   - stat: 0
-    minimum: 25
-    maximum: 25
+    minimum: 28
+    maximum: 28
     isPercent: 0
   - stat: 0
-    minimum: 0.06
-    maximum: 0.06
+    minimum: 0.14
+    maximum: 0.14
     isPercent: 1
   - stat: 6
-    minimum: 0.025
-    maximum: 0.025
+    minimum: 0.05
+    maximum: 0.05
     isPercent: 1
+  - stat: 1
+    minimum: 3
+    maximum: 3
+    isPercent: 0
   randomisableStats:
   - stat: 1
     minimum: 0.1

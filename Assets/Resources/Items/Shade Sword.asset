@@ -15,7 +15,7 @@ MonoBehaviour:
   itemDescription: 
   itemTag: 
   itemFlavourText: A shady sword that feels fairly light.
-  classRequirement: Rogue
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 09b62cca23038b9438555a6258a5c0ca, type: 3}
   itemType: 2
   itemRarity: 0
@@ -24,16 +24,16 @@ MonoBehaviour:
   randomStatCount: 0
   guaranteedStats:
   - stat: 0
-    minimum: 15
-    maximum: 15
+    minimum: 17
+    maximum: 17
     isPercent: 0
   - stat: 6
-    minimum: 0.075
-    maximum: 0.075
+    minimum: 0.05
+    maximum: 0.05
     isPercent: 1
   - stat: 3
-    minimum: 0.03
-    maximum: 0.03
+    minimum: 0.11
+    maximum: 0.11
     isPercent: 1
   randomisableStats: []
   minimumDropLevel: 0

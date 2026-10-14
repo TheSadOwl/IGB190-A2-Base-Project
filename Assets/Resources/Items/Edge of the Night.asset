@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
-  classRequirement: Rogue
+  itemFlavourText: A blade that has seen deadly use during nightfall.
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: a60d7214b3cad2e4b94d312daeda3185, type: 3}
   itemType: 2
   itemRarity: 1
@@ -24,16 +24,16 @@ MonoBehaviour:
   randomStatCount: 1
   guaranteedStats:
   - stat: 0
-    minimum: 23
-    maximum: 23
+    minimum: 22
+    maximum: 22
     isPercent: 0
   - stat: 10
-    minimum: 0.04
-    maximum: 0.04
+    minimum: 0.14
+    maximum: 0.14
     isPercent: 0
   - stat: 11
-    minimum: 0.16
-    maximum: 0.16
+    minimum: 0.52
+    maximum: 0.52
     isPercent: 0
   randomisableStats:
   - stat: 0

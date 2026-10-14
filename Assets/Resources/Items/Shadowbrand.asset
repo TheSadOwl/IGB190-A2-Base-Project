@@ -15,7 +15,7 @@ MonoBehaviour:
   itemDescription: 
   itemTag: 
   itemFlavourText: A blade absorbed with shadow essence.
-  classRequirement: Rogue
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 63bbf1e1658caa346b0e6300b0209f45, type: 3}
   itemType: 2
   itemRarity: 1
@@ -24,12 +24,20 @@ MonoBehaviour:
   randomStatCount: 1
   guaranteedStats:
   - stat: 0
-    minimum: 18
-    maximum: 18
+    minimum: 19
+    maximum: 19
     isPercent: 0
   - stat: 3
-    minimum: 0.03
-    maximum: 0.03
+    minimum: 0.11
+    maximum: 0.11
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.06
+    isPercent: 1
+  - stat: 8
+    minimum: 0.06
+    maximum: 0.06
     isPercent: 1
   randomisableStats:
   - stat: 0

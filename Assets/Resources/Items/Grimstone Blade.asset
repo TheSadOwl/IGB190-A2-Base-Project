@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemDescription: 
   itemTag: 
-  itemFlavourText: Forged with a harden metal of Grimstone.
-  classRequirement: Rogue
+  itemFlavourText: Forged with a hardened metal known as Grimstone.
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 2f9cb5e61c98b134cbd79948006814f5, type: 3}
   itemType: 2
   itemRarity: 0
@@ -24,12 +24,16 @@ MonoBehaviour:
   randomStatCount: 0
   guaranteedStats:
   - stat: 0
-    minimum: 15
-    maximum: 15
+    minimum: 17
+    maximum: 17
     isPercent: 0
   - stat: 1
-    minimum: 10
-    maximum: 10
+    minimum: 5
+    maximum: 5
+    isPercent: 0
+  - stat: 5
+    minimum: 25
+    maximum: 25
     isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
