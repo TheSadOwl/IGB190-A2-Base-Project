@@ -40,7 +40,14 @@ MonoBehaviour:
   owner: {fileID: 0}
   applier: {fileID: 0}
   engine:
-    scripts: []
+    scripts:
+    - scriptName: Main
+      scriptUID: 909755253
+      hasWait: 0
+      reportErrors: 1
+      eventNodes: []
+      conditionNodes: []
+      actionNodes: []
   references:
     version: 2
     RefIds: []

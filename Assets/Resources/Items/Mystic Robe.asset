@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: A fragile robe enriched with magic.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 9154282eca33d764096b484f95f485eb, type: 3}
   itemType: 3
   itemRarity: 0
-  itemCost: 100
+  itemCost: 75
   itemSet: {fileID: 0}
   randomStatCount: 0
   guaranteedStats:
   - stat: 1
-    minimum: 15
-    maximum: 15
+    minimum: 20
+    maximum: 20
     isPercent: 0
   - stat: 4
-    minimum: 100
-    maximum: 100
+    minimum: 83
+    maximum: 83
     isPercent: 0
-  - stat: 9
-    minimum: 0.05
-    maximum: 0.05
+  - stat: 8
+    minimum: 0.09
+    maximum: 0.09
     isPercent: 1
   randomisableStats: []
   minimumDropLevel: 0

@@ -18,7 +18,7 @@ MonoBehaviour:
   abilityIcon: {fileID: 21300000, guid: d188ae3e513c88f4689a9620e9e0fbdc, type: 3}
   targetMode: 4
   abilityDescription: Fire a ball of electricity towards target location, dealing
-    60% attack damage to all enemies near the impact area.
+    100% attack damage to all enemies near the impact area.
   abilityAnimation: Bow Shoot
   range: 8
   castTime: 0.1

@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Forgotten Fury
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Increase Unit's Damage by 20% and Attack Speed by 10% when casting
-    an Ability.
+  itemDescription: Increases damage by 20% and attack speed by 10% when casting an
+    ability.
   itemTag: 
-  itemFlavourText: 
-  classRequirement: Rogue
+  itemFlavourText: A weapon belonging to a lost warrior whose rage still lingers
+    in the blade.
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 26326872d54191a4cad83dadabef5ec8, type: 3}
   itemType: 2
   itemRarity: 2
@@ -25,16 +26,16 @@ MonoBehaviour:
   randomStatCount: 2
   guaranteedStats:
   - stat: 0
-    minimum: 23
-    maximum: 23
+    minimum: 25
+    maximum: 25
     isPercent: 0
   - stat: 3
-    minimum: 0.04
-    maximum: 0.04
+    minimum: 0.17
+    maximum: 0.17
     isPercent: 1
   - stat: 10
-    minimum: 0.06
-    maximum: 0.06
+    minimum: 0.17
+    maximum: 0.17
     isPercent: 0
   randomisableStats:
   - stat: 0

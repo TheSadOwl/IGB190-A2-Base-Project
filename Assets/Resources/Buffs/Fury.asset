@@ -26,7 +26,7 @@ MonoBehaviour:
   buffCurrentStacks: 1
   buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
-  buffAttachPoint: 
+  buffAttachPoint: Cast Point
   buffScale: 0
   buffStatBonuses:
   - stat: 0
@@ -47,7 +47,14 @@ MonoBehaviour:
   owner: {fileID: 0}
   applier: {fileID: 0}
   engine:
-    scripts: []
+    scripts:
+    - scriptName: Main
+      scriptUID: 160667552
+      hasWait: 0
+      reportErrors: 1
+      eventNodes: []
+      conditionNodes: []
+      actionNodes: []
   references:
     version: 2
     RefIds: []

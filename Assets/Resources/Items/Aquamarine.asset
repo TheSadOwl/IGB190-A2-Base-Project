@@ -12,39 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Aquamarine
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: If the owner is moving, gain 10% of  movespeed as resource per
-    second.
+  itemDescription: Using an ability applies the Aqueous buff, increasing movement
+    speed by 20% per stack and reducing damage taken by 25%.
   itemTag: 
-  itemFlavourText: 
-  classRequirement: Rogue
-  itemIcon: {fileID: 21300000, guid: e06257c2995c8734385304e0bf75528f, type: 3}
+  itemFlavourText: A prismatic shine radiates from within.
+  classRequirement: 
+  itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 3
   itemRarity: 2
-  itemCost: 700
+  itemCost: 500
   itemSet: {fileID: 0}
-  randomStatCount: 0
+  randomStatCount: 2
   guaranteedStats:
   - stat: 1
-    minimum: 25
-    maximum: 25
+    minimum: 33
+    maximum: 33
     isPercent: 0
   - stat: 4
-    minimum: 150
-    maximum: 150
+    minimum: 125
+    maximum: 125
     isPercent: 0
   - stat: 7
-    minimum: 0.065
-    maximum: 0.065
+    minimum: 0.08
+    maximum: 0.08
     isPercent: 1
-  - stat: 9
-    minimum: 0.02
-    maximum: 0.02
+  - stat: 8
+    minimum: 0.08
+    maximum: 0.08
     isPercent: 1
-  - stat: 5
+  randomisableStats:
+  - stat: 1
     minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 4
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 1
+  - stat: 2
+    minimum: 0.05
     maximum: 0.1
     isPercent: 1
-  randomisableStats: []
+  - stat: 6
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
+  - stat: 10
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 0
+  - stat: 11
+    minimum: 0.1
+    maximum: 0.15
+    isPercent: 0
+  - stat: 12
+    minimum: 0.05
+    maximum: 0.1
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -52,438 +76,27 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1761647932
+      scriptUID: 1251766435
       hasWait: 0
       reportErrors: 1
       eventNodes:
-      - rid: 1578307481206784000
+      - rid: 5940154771976224845
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1776389229
+      scriptUID: 1891289856
       hasWait: 0
       reportErrors: 1
       eventNodes:
-      - rid: 1578307481206784001
+      - rid: 5940154771976224846
       conditionNodes: []
       actionNodes: []
-    - scriptName: Passive
-      scriptUID: 726926717
-      hasWait: 0
-      reportErrors: 1
-      eventNodes:
-      - rid: 1000
-      conditionNodes:
-      - rid: 1002
-      actionNodes:
-      - rid: 1005
-      - rid: 1012
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 1000
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: OnTimerFinished
-        functionDescription: Time/Do every X Seconds
-        functionDynamicDescription: Every $ seconds
-        functionEvaluators:
-        - rid: 1001
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Timer
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets: []
-    - rid: 1001
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1000
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 1
-    - rid: 1002
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitIsMoving
-        functionDescription: Unit/Unit Is Moving
-        functionDynamicDescription: $ $ moving
-        functionEvaluators:
-        - rid: 1003
-        - rid: 1004
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1003
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 0
-        indent: 0
-        presetName: Item Owner
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 1004
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Is
-        options:
-        - Is
-        - Is Not
-    - rid: 1005
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddResourceToUnits
-        functionDescription: Unit/Resources/Add Resource to Unit(s)
-        functionDynamicDescription: Add $ resource to $
-        functionEvaluators:
-        - rid: 1006
-        - rid: 1007
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1006
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Multiplication
-        functionDescription: Math/Multiplication
-        functionDynamicDescription: $ x $
-        functionEvaluators:
-        - rid: 1008
-        - rid: 1009
-        parentNode:
-          rid: 1005
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 10
-    - rid: 1007
-      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit(s)
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1005
-        parentNodeID: 1
-        indent: 0
-        presetName: Item Owner
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        allowSingleUnit: 0
-    - rid: 1008
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitStat
-        functionDescription: Unit/Unit Stat
-        functionDynamicDescription: $ $
-        functionEvaluators:
-        - rid: 1017
-        - rid: 1018
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1009
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 10
-    - rid: 1012
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ShowDebugMessage
-        functionDescription: Debug/Show Debug Message
-        functionDynamicDescription: Show a debug message printing $
-        functionEvaluators:
-        - rid: 1013
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: UI
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1013
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Message
-        functionName: NumberToString
-        functionDescription: Convert/Number to String
-        functionDynamicDescription: 'To String: $'
-        functionEvaluators:
-        - rid: 1015
-        parentNode:
-          rid: 1012
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 
-        options: []
-    - rid: 1014
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: Item Owner
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 1015
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitStat
-        functionDescription: Unit/Unit Stat
-        functionDynamicDescription: $ $
-        functionEvaluators:
-        - rid: 1014
-        - rid: 1016
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1016
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Movement Speed
-        options:
-        - Damage
-        - Armor
-        - Damage Taken
-        - Attack Speed
-        - Max Health
-        - Max Resource
-        - Movement Speed
-        - Cooldown Reduction
-        - Ability Cost Reduction
-        - Resource Generation
-        - Critical Chance
-        - Critical Damage
-        - Vitality
-    - rid: 1017
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: Item Owner
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 1018
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Movement Speed
-        options:
-        - Damage
-        - Armor
-        - Damage Taken
-        - Attack Speed
-        - Max Health
-        - Max Resource
-        - Movement Speed
-        - Cooldown Reduction
-        - Ability Cost Reduction
-        - Resource Generation
-        - Critical Chance
-        - Critical Damage
-        - Vitality
-    - rid: 1578307481206784000
+    - rid: 5940154771976224845
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -504,7 +117,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 1578307481206784001
+    - rid: 5940154771976224846
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
