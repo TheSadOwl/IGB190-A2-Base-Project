@@ -10,24 +10,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Ring Of Vigor
-  m_EditorClassIdentifier: 
-  itemDescription: A ring made from the toughest materials.
+  m_Name: The Finality
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemDescription: 
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: Grants you the will of a warrior even in your final moments.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
-  itemType: 0
-  itemRarity: 0
-  itemCost: 50
+  itemIcon: {fileID: 21300000, guid: ec888f7f279932d479dd9d2f3047a4ba, type: 3}
+  itemType: 1
+  itemRarity: 1
+  itemCost: 200
   itemSet: {fileID: 0}
-  randomStatCount: 0
+  randomStatCount: 1
   guaranteedStats:
-  - stat: 4
-    minimum: 50
-    maximum: 50
+  - stat: 0
+    minimum: 2
+    maximum: 2
     isPercent: 0
-  randomisableStats: []
+  - stat: 7
+    minimum: 0.19
+    maximum: 0.19
+    isPercent: 1
+  - stat: 8
+    minimum: 0.19
+    maximum: 0.19
+    isPercent: 1
+  - stat: 3
+    minimum: 0.04
+    maximum: 0.04
+    isPercent: 1
+  randomisableStats:
+  - stat: 0
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
+  - stat: 3
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
+  - stat: 9
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -35,19 +59,19 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1867767527
+      scriptUID: 1652955630
       hasWait: 0
       reportErrors: 1
       eventNodes:
-      - rid: 248813236419559487
+      - rid: 7642462771353223174
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 708064494
+      scriptUID: 80205015
       hasWait: 0
       reportErrors: 1
       eventNodes:
-      - rid: 248813236419559488
+      - rid: 7642462771353223175
       conditionNodes: []
       actionNodes: []
   references:
@@ -55,7 +79,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 248813236419559487
+    - rid: 7642462771353223174
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -76,7 +100,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559488
+    - rid: 7642462771353223175
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
