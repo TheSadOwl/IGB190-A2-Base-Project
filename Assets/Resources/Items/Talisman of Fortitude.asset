@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: Grants you strength in the toughest of situations.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 181b5fdeed6d08942b5976f78b43f8d9, type: 3}
+  itemIcon: {fileID: 21300000, guid: 650f1490561804c48908af065bc3d1df, type: 3}
   itemType: 1
   itemRarity: 0
   itemCost: 75
