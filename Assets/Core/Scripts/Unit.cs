@@ -216,6 +216,7 @@ public class Unit : Interactable
         amount *= GetBaseDamageTakenModifier();
 
         // Armor currently doesn't do anything? Add logic here.
+        amount *= GetArmorDamageTakenModifier();
 
         // Return the modified amount.
         return amount;
