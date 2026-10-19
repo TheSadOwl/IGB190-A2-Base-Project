@@ -13073,13 +13073,13 @@ MonoBehaviour:
   unitName: Sorcerer
   baseDamage: 40
   baseAttacksPerSecond: 1.5
-  baseMaxHealth: 300
+  baseMaxHealth: 250
   baseMaxResource: 200
   baseMovementSpeed: 4.5
   baseArmor: 5
   baseCriticalStrikeChance: 0.05
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 20
+  baseHealthRegen: 10
   baseResourceRegen: 8
   baseAttackRange: 2
   health: 500
@@ -40576,7 +40576,7 @@ MonoBehaviour:
   baseArmor: 10
   baseCriticalStrikeChance: 0.05
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 20
+  baseHealthRegen: 10
   baseResourceRegen: 0
   baseAttackRange: 2
   health: 500

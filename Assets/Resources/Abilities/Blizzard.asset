@@ -23,13 +23,13 @@ MonoBehaviour:
   range: 15
   castTime: 0.1
   abilityCooldown: 15
-  abilityCost: 0
+  abilityCost: 40
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 1
   hasSpecificCastTime: 0
   cooldownIsAtackSpeed: 0
-  abilityGeneratesResource: 1
+  abilityGeneratesResource: 0
   requiresLineOfSight: 0
   canUpdateTargetWhileCasting: 0
   castAtClosestPointInRange: 1
