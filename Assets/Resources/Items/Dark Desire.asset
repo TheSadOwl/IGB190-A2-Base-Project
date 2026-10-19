@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Dark Desire
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: 
+  itemDescription: Steal resources from killed enemies.
   itemTag: 
-  itemFlavourText: 
+  itemFlavourText: To gain what you truly desire, you must sacrifice that which you
+    hold dearest.
   classRequirement: 
   itemIcon: {fileID: 21300000, guid: 74147d83c76aa6945ae2be73712532e1, type: 3}
   itemType: 0
@@ -43,7 +44,19 @@ MonoBehaviour:
     minimum: 0.15
     maximum: 0.15
     isPercent: 1
-  randomisableStats: []
+  randomisableStats:
+  - stat: 8
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
+  - stat: 2
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
+  - stat: 12
+    minimum: 0.01
+    maximum: 0.03
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
