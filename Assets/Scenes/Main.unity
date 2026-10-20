@@ -14682,12 +14682,12 @@ GameObject:
   - component: {fileID: 446772364}
   - component: {fileID: 446772363}
   m_Layer: 2
-  m_Name: SpawnArea2 (2)
+  m_Name: SpawnArea4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &446772362
 Transform:
   m_ObjectHideFlags: 0
@@ -18842,8 +18842,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Mana
   resourceMaterial: {fileID: 2100000, guid: dd6dc55119cde6f4ab2a8561e505a971, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0
@@ -20907,7 +20907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &726264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20924,7 +20924,7 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
   unitName: Rogue
-  baseDamage: 50
+  baseDamage: 20
   baseAttacksPerSecond: 3
   baseMaxHealth: 300
   baseMaxResource: 100
@@ -20972,13 +20972,13 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Stamina
   resourceMaterial: {fileID: 2100000, guid: 570c6c2d52340754c8559f925ca49b0d, type: 2}
-  bonusDamagePerLevel: 10
-  bonusHealthPerLevel: 10
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0.01
-  bonusResourcePerLevel: 10
+  bonusResourcePerLevel: 5
   bonusArmorPerLevel: 1
-  bonusCriticalChancePerLevel: 0.05
-  bonusCriticalDamagePerLevel: 0.01
+  bonusCriticalChancePerLevel: 0.01
+  bonusCriticalDamagePerLevel: 0.05
   bonusHealthRegenPerLevel: 1
   bonusResourceRegenPerLevel: 1
 --- !u!195 &726264968
@@ -32970,7 +32970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33035,8 +33035,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Rage
   resourceMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0
@@ -35601,12 +35601,12 @@ GameObject:
   - component: {fileID: 1158449324}
   - component: {fileID: 1158449323}
   m_Layer: 2
-  m_Name: SpawnArea2 (3)
+  m_Name: SpawnArea5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1158449322
 Transform:
   m_ObjectHideFlags: 0
@@ -35634,7 +35634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 5
+  empoweredMonsters: 4
   spawnDensity: 4
   maximumSpawnLevel: 3
 --- !u!65 &1158449324
@@ -45464,7 +45464,7 @@ GameObject:
   - component: {fileID: 1409656035}
   - component: {fileID: 1409656034}
   m_Layer: 2
-  m_Name: SpawnArea2 (1)
+  m_Name: SpawnArea3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62332,7 +62332,7 @@ MonoBehaviour:
   baseArmor: 7
   baseCriticalStrikeChance: 0.05
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 10
+  baseHealthRegen: 5
   baseResourceRegen: 0
   baseAttackRange: 2
   health: 500
@@ -62372,8 +62372,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
   resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0
@@ -66178,33 +66178,33 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 15
     baseGoldDropAmountMaximum: 30
     goldDropChance: 1
-    unempoweredMonsterCommonDropChance: 0.01
-    unempoweredMonsterRareDropChance: 0.001
-    unempoweredMonsterLegendaryDropChance: 0.0001
+    unempoweredMonsterCommonDropChance: 0.1
+    unempoweredMonsterRareDropChance: 0.05
+    unempoweredMonsterLegendaryDropChance: 0.02
   _empoweredMonsterValues:
-    empoweredMonsterHealthModifier: 2
-    empoweredMonsterDamageModifier: 2.5
+    empoweredMonsterHealthModifier: 4
+    empoweredMonsterDamageModifier: 2
     empoweredMonsterAttackSpeedModifier: 1.5
     empoweredMonsterXPModifier: 5
-    empoweredMonsterGoldModifier: 3
+    empoweredMonsterGoldModifier: 5
     empoweredMonsterCommonDropChance: 0.5
-    empoweredMonsterRareDropChance: 0.1
-    empoweredMonsterLegendaryDropChance: 0.01
+    empoweredMonsterRareDropChance: 0.25
+    empoweredMonsterLegendaryDropChance: 0.1
   _playerExperienceValues:
     baseMonsterXP: 10
     startingXPPerLevel: 50
-    additionalMaxXPPerLevel: 100
+    additionalMaxXPPerLevel: 25
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.7
     increasedDamagePerPlayerLevel: 1
   _healthGlobeValues:
-    baseHealthGlobeChance: 0
-    reducedChancePerExistingGlobe: 0
+    baseHealthGlobeChance: 0.25
+    reducedChancePerExistingGlobe: 0.15
     spawnRadius: 6
-    lifetime: 5
-    healthGlobeHealthRestore: 50
+    lifetime: 10
+    healthGlobeHealthRestore: 100
   _inventoryValues:
-    sellItemReturnRate: 0.25
+    sellItemReturnRate: 0.5
   _armorValues:
     maxArmor: 1000
     armorDamageReductionCurve:

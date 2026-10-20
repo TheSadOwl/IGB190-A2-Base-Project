@@ -17,8 +17,9 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 832f5387d63fe1e45ae1a2513eb95570, type: 3}
   targetMode: 4
-  abilityDescription: Teleport on to a location, nearby enemies are stunned and deals
-    100% damage. If you kill an Unit reduce cooldown by 5s.
+  abilityDescription: Instantly teleport towards the target location, dealing 250%
+    damage and stunning nearby enemies. If you kill an enemy, reduce cooldown by
+    5s.
   abilityAnimation: One Hand Slash
   range: 6
   castTime: 0
@@ -437,7 +438,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 100
+        value: 250
     - rid: 1018
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
