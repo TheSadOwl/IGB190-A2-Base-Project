@@ -125,6 +125,10 @@ public class Player : Unit
     /// </summary>
     public override void TakeDamage(float amount, bool isCritical, Unit damagingUnit, IVisualCodeHandler damageSource)
     {
+        const float helpModifier = 0.15f;
+        const float maxDamageReduction = 0.5f;
+        float healthPerc = health / stats[Stat.MaxHealth].GetValue();
+        amount *= Mathf.Max(Mathf.Pow(healthPerc, helpModifier), 1.0f - maxDamageReduction);
         base.TakeDamage(amount, isCritical, damagingUnit, damageSource);
     }
 
