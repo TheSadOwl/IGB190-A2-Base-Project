@@ -41421,7 +41421,7 @@ MonoBehaviour:
   baseArmor: 10
   baseCriticalStrikeChance: 0.05
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 10
+  baseHealthRegen: 5
   baseResourceRegen: 0
   baseAttackRange: 2
   health: 500
@@ -44988,22 +44988,22 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 1
     baseGoldDropAmountMaximum: 5
     goldDropChance: 1
-    unempoweredMonsterCommonDropChance: 0.01
-    unempoweredMonsterRareDropChance: 0.001
-    unempoweredMonsterLegendaryDropChance: 0.0001
+    unempoweredMonsterCommonDropChance: 0.1
+    unempoweredMonsterRareDropChance: 0.05
+    unempoweredMonsterLegendaryDropChance: 0.02
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 2
     empoweredMonsterDamageModifier: 2.5
     empoweredMonsterAttackSpeedModifier: 1.5
     empoweredMonsterXPModifier: 5
-    empoweredMonsterGoldModifier: 3
+    empoweredMonsterGoldModifier: 5
     empoweredMonsterCommonDropChance: 0.5
-    empoweredMonsterRareDropChance: 0.1
-    empoweredMonsterLegendaryDropChance: 0.01
+    empoweredMonsterRareDropChance: 0.25
+    empoweredMonsterLegendaryDropChance: 0.1
   _playerExperienceValues:
     baseMonsterXP: 5
     startingXPPerLevel: 50
-    additionalMaxXPPerLevel: 100
+    additionalMaxXPPerLevel: 50
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.4
     increasedDamagePerPlayerLevel: 0.7

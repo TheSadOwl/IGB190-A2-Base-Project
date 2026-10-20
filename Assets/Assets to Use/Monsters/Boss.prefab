@@ -222,8 +222,8 @@ MonoBehaviour:
   outline: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
-  unitName: Boss
-  baseDamage: 30
+  unitName: Necromancer
+  baseDamage: 45
   baseAttacksPerSecond: 2
   baseMaxHealth: 900
   baseMaxResource: 100
@@ -233,7 +233,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 2
   baseHealthRegen: 0
   baseResourceRegen: 0
-  baseAttackRange: 2
+  baseAttackRange: 3.5
   health: 100
   resource: 0
   abilities:
