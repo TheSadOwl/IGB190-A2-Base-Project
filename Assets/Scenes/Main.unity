@@ -13509,8 +13509,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Mana
   resourceMaterial: {fileID: 2100000, guid: dd6dc55119cde6f4ab2a8561e505a971, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0
@@ -15259,7 +15259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &726264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15276,7 +15276,7 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
   unitName: Rogue
-  baseDamage: 50
+  baseDamage: 20
   baseAttacksPerSecond: 3
   baseMaxHealth: 300
   baseMaxResource: 100
@@ -15324,13 +15324,13 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Stamina
   resourceMaterial: {fileID: 2100000, guid: 570c6c2d52340754c8559f925ca49b0d, type: 2}
-  bonusDamagePerLevel: 10
-  bonusHealthPerLevel: 10
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0.01
   bonusResourcePerLevel: 10
   bonusArmorPerLevel: 1
-  bonusCriticalChancePerLevel: 0.05
-  bonusCriticalDamagePerLevel: 0.01
+  bonusCriticalChancePerLevel: 0.01
+  bonusCriticalDamagePerLevel: 0.05
   bonusHealthRegenPerLevel: 1
   bonusResourceRegenPerLevel: 1
 --- !u!195 &726264968
@@ -22178,7 +22178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22243,8 +22243,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Rage
   resourceMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0
@@ -41461,8 +41461,8 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
   resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
+  bonusDamagePerLevel: 5
+  bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
   bonusArmorPerLevel: 0

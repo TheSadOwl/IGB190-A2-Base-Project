@@ -17,7 +17,7 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 1832452350, guid: aa6eceab29ed221468872af3d972339a, type: 3}
   targetMode: 3
-  abilityDescription: Pierce with a dagger, dealing 40% attack damage to all units
+  abilityDescription: Pierce with a dagger, dealing 100% attack damage to all units
     in front of the caster that applies weaks enemies Armour by 10%.
   abilityAnimation: One Hand Stab
   range: 8
@@ -111,7 +111,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 40
+        value: 100
     - rid: 1003
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
