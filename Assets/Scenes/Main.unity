@@ -45026,7 +45026,7 @@ MonoBehaviour:
     lifetime: 10
     healthGlobeHealthRestore: 100
   _inventoryValues:
-    sellItemReturnRate: 0.25
+    sellItemReturnRate: 0.5
   _armorValues:
     maxArmor: 1000
     armorDamageReductionCurve:
