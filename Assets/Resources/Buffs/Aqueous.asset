@@ -16,7 +16,7 @@ MonoBehaviour:
     by 25%.
   buffFlavourText: 
   buffTag: 
-  buffIcon: {fileID: 21300000, guid: fe2b8789f60c97a4aacdbab1610e4e51, type: 3}
+  buffIcon: {fileID: 1520309570, guid: aa6eceab29ed221468872af3d972339a, type: 3}
   buffType: 0
   buffRemovedOnDeath: 1
   buffVisibleInUI: 1
@@ -25,11 +25,25 @@ MonoBehaviour:
   buffCurrentDuration: 0
   buffMaxDuration: 10
   buffCurrentStacks: 1
-  buffMaximumStacks: 1
+  buffMaximumStacks: 5
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
-  buffScale: 0
-  buffStatBonuses: []
+  buffScale: 1
+  buffStatBonuses:
+  - stat: 6
+    modifier:
+      Value: 0.2
+      RemoveAt: 0
+      IsPercentage: 1
+      Label: 
+      Stacks: 0
+  - stat: 2
+    modifier:
+      Value: 0.2
+      RemoveAt: 0
+      IsPercentage: 1
+      Label: 
+      Stacks: 0
   visualEffect: {fileID: 0}
   owner: {fileID: 0}
   applier: {fileID: 0}

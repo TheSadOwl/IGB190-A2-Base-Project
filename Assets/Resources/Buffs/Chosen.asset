@@ -12,23 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Chosen
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Increases armour by 5% and movement speed by 10% per stack.
+  buffDescription: Increases max resource by 10% and resource regeneration by 10%
+    per stack.
   buffFlavourText: 
   buffTag: 
-  buffIcon: {fileID: 21300000, guid: fe2b8789f60c97a4aacdbab1610e4e51, type: 3}
+  buffIcon: {fileID: 1266082386, guid: aa6eceab29ed221468872af3d972339a, type: 3}
   buffType: 0
   buffRemovedOnDeath: 1
   buffVisibleInUI: 1
   buffHasDuration: 1
   addingStacksRefreshesDuration: 1
   buffCurrentDuration: 0
-  buffMaxDuration: 10
+  buffMaxDuration: 5
   buffCurrentStacks: 1
-  buffMaximumStacks: 1
+  buffMaximumStacks: 10
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
-  buffScale: 0
-  buffStatBonuses: []
+  buffScale: 1
+  buffStatBonuses:
+  - stat: 5
+    modifier:
+      Value: 1
+      RemoveAt: 0
+      IsPercentage: 1
+      Label: 
+      Stacks: 0
+  - stat: 9
+    modifier:
+      Value: 1
+      RemoveAt: 0
+      IsPercentage: 1
+      Label: 
+      Stacks: 0
   visualEffect: {fileID: 0}
   owner: {fileID: 0}
   applier: {fileID: 0}

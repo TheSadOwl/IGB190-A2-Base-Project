@@ -91,13 +91,11 @@ MonoBehaviour:
       data:
         returnType: 2
         tempName: Unit Group
-        functionName: FilterUnitsWithinRangeOfPoint
-        functionDescription: Filters/Units within Range of Point
-        functionDynamicDescription: $ within $ of $
+        functionName: GetUnitGroupVariable
+        functionDescription: Unit Group Variable
+        functionDynamicDescription: 'Unit Group: $'
         functionEvaluators:
-        - rid: 1009
-        - rid: 1010
-        - rid: 1011
+        - rid: 1015
         parentNode:
           rid: 1000
         parentNodeID: 1
@@ -243,70 +241,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
-    - rid: 1009
-      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit Group
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 0
-        indent: 0
-        presetName: All Enemies
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        allowSingleUnit: 0
-    - rid: 1010
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: m
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
         value: 3
-    - rid: 1011
-      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Location
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 2
-        indent: 0
-        presetName: Casting Unit
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {x: 0, y: 0, z: 0}
     - rid: 1012
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -334,13 +269,11 @@ MonoBehaviour:
       data:
         returnType: 2
         tempName: Unit(s)
-        functionName: FilterUnitsWithinRangeOfPoint
-        functionDescription: Units Near Point
-        functionDynamicDescription: $ within $ of $
+        functionName: GetUnitGroupVariable
+        functionDescription: Unit Group Variable
+        functionDynamicDescription: 'Unit Group: $'
         functionEvaluators:
-        - rid: 1015
         - rid: 1016
-        - rid: 1017
         parentNode:
           rid: 1012
         parentNodeID: 0
@@ -375,28 +308,7 @@ MonoBehaviour:
         allowFunction: 1
         value: 3
     - rid: 1015
-      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit(s)
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: All Enemies
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        allowSingleUnit: 0
-    - rid: 1016
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
         tempName: 
@@ -410,17 +322,18 @@ MonoBehaviour:
         indent: 0
         presetName: 
         variableName: 
-        stringSuffix: m
+        stringSuffix: 
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
-    - rid: 1017
-      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+        value: UnitGroupVar
+        options: []
+    - rid: 1016
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 4
-        tempName: Location
+        returnType: 0
+        tempName: 
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
@@ -429,14 +342,15 @@ MonoBehaviour:
           rid: -2
         parentNodeID: -1
         indent: 0
-        presetName: Casting Unit
+        presetName: 
         variableName: 
         stringSuffix: 
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 0, y: 0, z: 0}
+        value: UnitGroupVar
+        options: []
     - rid: 1018
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -716,6 +630,225 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
+    - rid: 1030
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SetGlobalUnitGroupVariable
+        functionDescription: Global Variables/Set Global Unit Group Variable
+        functionDynamicDescription: Set Global Unit Group named $ to $
+        functionEvaluators:
+        - rid: 1031
+        - rid: 1032
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Variable
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1031
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Variable Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1030
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Stunned
+        options: []
+    - rid: 1032
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit(s)
+        functionName: GetUnitGroupVariable
+        functionDescription: Unit Group Variable
+        functionDynamicDescription: 'Unit Group: $'
+        functionEvaluators:
+        - rid: 1033
+        parentNode:
+          rid: 1030
+        parentNodeID: 1
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1033
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1032
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: UnitGroupVar
+        options: []
+    - rid: 1034
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SetUnitGroupVariable
+        functionDescription: Variables/Set Unit Group Variable
+        functionDynamicDescription: Set Unit Group named $ to $
+        functionEvaluators:
+        - rid: 1035
+        - rid: 1036
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Variable
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1035
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1034
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: UnitGroupVar
+        options: []
+    - rid: 1036
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit(s)
+        functionName: FilterUnitsWithinRangeOfPoint
+        functionDescription: Units Near Point
+        functionDynamicDescription: $ within $ of $
+        functionEvaluators:
+        - rid: 1040
+        - rid: 1041
+        - rid: 1042
+        parentNode:
+          rid: 1034
+        parentNodeID: 1
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1040
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit(s)
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: All Enemies
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1041
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 1042
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Location
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
     - rid: 123489724181774581
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -728,9 +861,11 @@ MonoBehaviour:
           - rid: 123489724181774582
           conditionNodes: []
           actionNodes:
+          - rid: 1034
           - rid: 1018
           - rid: 1000
           - rid: 1012
+          - rid: 1030
           - rid: 1003
           - rid: 1026
     - rid: 123489724181774582

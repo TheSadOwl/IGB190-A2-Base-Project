@@ -14,20 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LogicContainer
   engine:
     scripts:
-    - scriptName: Quest Start
-      scriptUID: 111461293
-      hasWait: 0
-      reportErrors: 1
-      eventNodes:
-      - rid: 1014
-      conditionNodes:
-      - rid: 1019
-      - rid: 1030
-      actionNodes:
-      - rid: 1000
-      - rid: 1002
-      - rid: 1016
-      - rid: 1006
     - scriptName: Quest Progress
       scriptUID: 1129428407
       hasWait: 0
@@ -37,7 +23,7 @@ MonoBehaviour:
       conditionNodes:
       - rid: 1008
       actionNodes:
-      - rid: 1011
+      - rid: 1000
     - scriptName: Quest Complete
       scriptUID: 922099527
       hasWait: 0
@@ -49,6 +35,10 @@ MonoBehaviour:
       - rid: 1023
       - rid: 1024
       - rid: 1033
+      - rid: 1035
+      - rid: 1004
+      - rid: 1012
+      - rid: 1037
       - rid: 1025
   references:
     version: 2
@@ -60,11 +50,13 @@ MonoBehaviour:
       data:
         returnType: 2
         tempName: 
-        functionName: CreateQuest2
-        functionDescription: Quests/Create Quest
-        functionDynamicDescription: Give the player a quest named $
+        functionName: ModifySpecificQuestRequirementProgress2
+        functionDescription: Quests/Modify Requirement Progress
+        functionDynamicDescription: Modify quest progress of $ on $ by $
         functionEvaluators:
         - rid: 1001
+        - rid: 1002
+        - rid: 1003
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -80,7 +72,7 @@ MonoBehaviour:
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
-        tempName: Quest Name
+        tempName: Requirement Name
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
@@ -96,54 +88,9 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Slay the Undead
-        options: []
-    - rid: 1002
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddQuestRequirement2
-        functionDescription: Quests/Add Quest Requirement
-        functionDynamicDescription: Add $ requirement to $ with $ progress increments
-        functionEvaluators:
-        - rid: 1003
-        - rid: 1004
-        - rid: 1005
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: QuestNew
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1003
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Requirement
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1002
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
         value: Put the Dead to Rest
         options: []
-    - rid: 1004
+    - rid: 1002
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -153,7 +100,7 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1002
+          rid: 1000
         parentNodeID: 1
         indent: 0
         presetName: 
@@ -165,7 +112,7 @@ MonoBehaviour:
         allowFunction: 1
         value: Slay the Undead
         options: []
-    - rid: 1005
+    - rid: 1003
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -175,7 +122,7 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1002
+          rid: 1000
         parentNodeID: 2
         indent: 0
         presetName: 
@@ -185,27 +132,74 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 15
-    - rid: 1006
+        value: 1
+    - rid: 1004
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: DisableScript
-        functionDescription: Flow/Disable This Script
-        functionDynamicDescription: Disable this script
-        functionEvaluators: []
+        functionName: AddQuestRequirement2
+        functionDescription: Quests/Add Quest Requirement
+        functionDynamicDescription: Add $ requirement to $ with $ progress increments
+        functionEvaluators:
+        - rid: 1005
+        - rid: 1006
+        - rid: 1011
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1005
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Requirement
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1004
+        parentNodeID: 0
         indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: Cancel
+        nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
+        value: Buy an Item From Shop
+        options: []
+    - rid: 1006
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1004
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Gear Up
+        options: []
     - rid: 1007
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -303,50 +297,6 @@ MonoBehaviour:
         - Is
         - Is Not
     - rid: 1011
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ModifyQuestRequirementProgress2
-        functionDescription: Quests/Modify Quest Progress
-        functionDynamicDescription: Modify quest progress of $ by $
-        functionEvaluators:
-        - rid: 1012
-        - rid: 1013
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: QuestNew
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1012
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1011
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Slay the Undead
-        options: []
-    - rid: 1013
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -356,8 +306,8 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1011
-        parentNodeID: 1
+          rid: 1004
+        parentNodeID: 2
         indent: 0
         presetName: 
         variableName: 
@@ -367,28 +317,73 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 1014
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+    - rid: 1012
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: OnTimerFinished
-        functionDescription: Time/Do every X Seconds
-        functionDynamicDescription: Every $ seconds
+        functionName: AddQuestRequirement2
+        functionDescription: Quests/Add Quest Requirement
+        functionDynamicDescription: Add $ requirement to $ with $ progress increments
         functionEvaluators:
+        - rid: 1013
+        - rid: 1014
         - rid: 1015
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1013
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Requirement
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1012
+        parentNodeID: 0
         indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: Timer
+        nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        presets: []
+        value: Equip an Item From Inventory
+        options: []
+    - rid: 1014
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1012
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Gear Up
+        options: []
     - rid: 1015
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -399,8 +394,8 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1014
-        parentNodeID: 0
+          rid: 1012
+        parentNodeID: 2
         indent: 0
         presetName: 
         variableName: 
@@ -410,141 +405,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 1016
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddQuestReward2
-        functionDescription: Quests/Add Quest Reward
-        functionDynamicDescription: Add reward labeled $ to quest $
-        functionEvaluators:
-        - rid: 1017
-        - rid: 1018
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: QuestNew
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1017
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Reward
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1016
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: ' 50 Gold and 50 XP'
-        options: []
-    - rid: 1018
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1016
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Slay the Undead
-        options: []
-    - rid: 1019
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: QuestIsActive
-        functionDescription: Quest/Quest Is Active
-        functionDynamicDescription: Quest named $ $ currently active
-        functionEvaluators:
-        - rid: 1020
-        - rid: 1021
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1020
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1019
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Way of The Shadow
-        options: []
-    - rid: 1021
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1019
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Is Not
-        options:
-        - Is
-        - Is Not
     - rid: 1022
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -692,7 +552,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Put the Dead to Rest
+        value: Slay the Undead
         options: []
     - rid: 1029
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -715,75 +575,6 @@ MonoBehaviour:
         allowPreset: 0
         allowFunction: 0
         value: Is
-        options:
-        - Is
-        - Is Not
-    - rid: 1030
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: QuestIsCompleted
-        functionDescription: Quest/Quest Is Completed
-        functionDynamicDescription: Quest named $ $ completed
-        functionEvaluators:
-        - rid: 1031
-        - rid: 1032
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1031
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1030
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Slay the Undead
-        options: []
-    - rid: 1032
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1030
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Is Not
         options:
         - Is
         - Is Not
@@ -829,3 +620,112 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 50
+    - rid: 1035
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: CreateQuest2
+        functionDescription: Quests/Create Quest
+        functionDynamicDescription: Give the player a quest named $
+        functionEvaluators:
+        - rid: 1036
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1036
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1035
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Gear Up
+        options: []
+    - rid: 1037
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddQuestReward2
+        functionDescription: Quests/Add Quest Reward
+        functionDynamicDescription: Add reward labeled $ to quest $
+        functionEvaluators:
+        - rid: 1038
+        - rid: 1039
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 1
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1038
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Reward
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1037
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100 XP
+        options: []
+    - rid: 1039
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1037
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Gear Up
+        options: []
