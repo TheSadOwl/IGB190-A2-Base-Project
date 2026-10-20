@@ -98,8 +98,8 @@ MonoBehaviour:
   outline: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
-  unitName: Monster 4
-  baseDamage: 15
+  unitName: Skeleton Guard
+  baseDamage: 20
   baseAttacksPerSecond: 2
   baseMaxHealth: 200
   baseMaxResource: 100
