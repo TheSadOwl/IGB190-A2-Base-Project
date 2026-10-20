@@ -216,7 +216,11 @@ public class Unit : Interactable
         amount *= GetBaseDamageTakenModifier();
 
         // Armor currently doesn't do anything? Add logic here.
-        amount *= GetArmorDamageTakenModifier();
+        // amount *= GetArmorDamageTakenModifier();
+        float armor = stats[Stat.Armor].GetValue();
+        float constant = 50f;
+        float scalingFactor = 0.5f;
+        amount = amount * (1.0f / (1.0f + Mathf.Pow(armor / constant, scalingFactor)));
 
         // Return the modified amount.
         return amount;

@@ -9383,7 +9383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empoweredMonsters: 2
-  spawnDensity: 2
+  spawnDensity: 1
   maximumSpawnLevel: 2
 --- !u!65 &446772364
 BoxCollider:
@@ -24812,7 +24812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 6
+  empoweredMonsters: 4
   spawnDensity: 4
   maximumSpawnLevel: 3
 --- !u!65 &1158449324
@@ -45018,13 +45018,13 @@ MonoBehaviour:
     additionalMaxXPPerLevel: 25
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.4
-    increasedDamagePerPlayerLevel: 0.7
+    increasedDamagePerPlayerLevel: 0.2
   _healthGlobeValues:
-    baseHealthGlobeChance: 0
-    reducedChancePerExistingGlobe: 0
+    baseHealthGlobeChance: 0.25
+    reducedChancePerExistingGlobe: 0.15
     spawnRadius: 6
-    lifetime: 5
-    healthGlobeHealthRestore: 50
+    lifetime: 10
+    healthGlobeHealthRestore: 100
   _inventoryValues:
     sellItemReturnRate: 0.25
   _armorValues:
