@@ -15259,7 +15259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &726264967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22182,7 +22182,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45005,7 +45005,7 @@ MonoBehaviour:
     unempoweredMonsterLegendaryDropChance: 0.02
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 4
-    empoweredMonsterDamageModifier: 4
+    empoweredMonsterDamageModifier: 2
     empoweredMonsterAttackSpeedModifier: 1.5
     empoweredMonsterXPModifier: 5
     empoweredMonsterGoldModifier: 5
