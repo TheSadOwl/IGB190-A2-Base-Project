@@ -8509,7 +8509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Custom Character
+  m_text: Rogue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
   m_sharedMaterial: {fileID: -5745236825215515014, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
@@ -15691,7 +15691,7 @@ Transform:
   m_GameObject: {fileID: 774919641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.94947433, z: -0, w: 0.31384462}
-  m_LocalPosition: {x: -0.81, y: -3.7, z: 14.6}
+  m_LocalPosition: {x: -0.64, y: -3.38, z: 13.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26221,14 +26221,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Write your own  custom description here!
+  m_text: 'The master of the shadows. The rogue strikes swiftly, eliminating foes
+    with ease. With his high agility and dexterity, he launchs his attacks with blinding
+    speed.
 
 
-    <color=#88FF88>Strength</color>:
-    ???
+    <color=#88FF88>Strength</color>: High mobility and Attack Speed
 
 
-    <color=#FF8888>Weakness</color>: ???'
+    <color=#FF8888>Weakness</color>:
+    Low Health and Armour'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
   m_sharedMaterial: {fileID: -5745236825215515014, guid: f8f5700936f4a7b49b055763ecdd2065, type: 2}
