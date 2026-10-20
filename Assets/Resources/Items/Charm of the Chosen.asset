@@ -53,7 +53,7 @@ MonoBehaviour:
     minimum: 0.01
     maximum: 0.03
     isPercent: 1
-  minimumDropLevel: 1
+  minimumDropLevel: 3
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}

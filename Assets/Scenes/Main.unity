@@ -9349,12 +9349,12 @@ GameObject:
   - component: {fileID: 446772364}
   - component: {fileID: 446772363}
   m_Layer: 2
-  m_Name: SpawnArea2 (2)
+  m_Name: SpawnArea4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &446772362
 Transform:
   m_ObjectHideFlags: 0
@@ -9383,7 +9383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empoweredMonsters: 2
-  spawnDensity: 1
+  spawnDensity: 2
   maximumSpawnLevel: 2
 --- !u!65 &446772364
 BoxCollider:
@@ -19838,6 +19838,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
+      propertyPath: baseMaxHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -24775,12 +24779,12 @@ GameObject:
   - component: {fileID: 1158449324}
   - component: {fileID: 1158449323}
   m_Layer: 2
-  m_Name: SpawnArea2 (3)
+  m_Name: SpawnArea5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1158449322
 Transform:
   m_ObjectHideFlags: 0
@@ -24808,7 +24812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22258bfc65daabc4a8797c8d6300c7dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  empoweredMonsters: 5
+  empoweredMonsters: 6
   spawnDensity: 4
   maximumSpawnLevel: 3
 --- !u!65 &1158449324
@@ -28063,6 +28067,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
+      propertyPath: baseMaxHealth
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -29687,7 +29695,7 @@ GameObject:
   - component: {fileID: 1409656035}
   - component: {fileID: 1409656034}
   m_Layer: 2
-  m_Name: SpawnArea2 (1)
+  m_Name: SpawnArea3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43608,6 +43616,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
+      propertyPath: baseMaxHealth
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -44992,8 +45004,8 @@ MonoBehaviour:
     unempoweredMonsterRareDropChance: 0.05
     unempoweredMonsterLegendaryDropChance: 0.02
   _empoweredMonsterValues:
-    empoweredMonsterHealthModifier: 2
-    empoweredMonsterDamageModifier: 2.5
+    empoweredMonsterHealthModifier: 4
+    empoweredMonsterDamageModifier: 4
     empoweredMonsterAttackSpeedModifier: 1.5
     empoweredMonsterXPModifier: 5
     empoweredMonsterGoldModifier: 5
@@ -45003,7 +45015,7 @@ MonoBehaviour:
   _playerExperienceValues:
     baseMonsterXP: 5
     startingXPPerLevel: 50
-    additionalMaxXPPerLevel: 0
+    additionalMaxXPPerLevel: 25
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.4
     increasedDamagePerPlayerLevel: 0.7
