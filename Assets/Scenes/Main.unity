@@ -15327,7 +15327,7 @@ MonoBehaviour:
   bonusDamagePerLevel: 5
   bonusHealthPerLevel: 15
   bonusMovementSpeedPerLevel: 0.01
-  bonusResourcePerLevel: 10
+  bonusResourcePerLevel: 5
   bonusArmorPerLevel: 1
   bonusCriticalChancePerLevel: 0.01
   bonusCriticalDamagePerLevel: 0.05
@@ -45003,7 +45003,7 @@ MonoBehaviour:
   _playerExperienceValues:
     baseMonsterXP: 5
     startingXPPerLevel: 50
-    additionalMaxXPPerLevel: 50
+    additionalMaxXPPerLevel: 0
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.4
     increasedDamagePerPlayerLevel: 0.7
