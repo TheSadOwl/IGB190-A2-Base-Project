@@ -17,8 +17,8 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 1832452350, guid: aa6eceab29ed221468872af3d972339a, type: 3}
   targetMode: 3
-  abilityDescription: Pierce with a dagger, dealing 100% attack damage to all units
-    in front of the caster that applies weaks enemies Armour by 10%.
+  abilityDescription: Pierce with a dagger, dealing 100% attack damage to enemies
+    in front of you and reducing their damage by 10% for 5s, stacking up to 50%.
   abilityAnimation: One Hand Stab
   range: 8
   castTime: 0
@@ -134,50 +134,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         allowSingleUnit: 0
-    - rid: 1004
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ApplyXStacksOfBuffToUnits
-        functionDescription: Unit/Buff/Apply Buff Stacks to Unit(s)
-        functionDynamicDescription: Apply $ stack(s) of $ to $
-        functionEvaluators:
-        - rid: 1005
-        - rid: 1019
-        - rid: 1020
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1005
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1004
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 1
     - rid: 1006
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -356,6 +312,93 @@ MonoBehaviour:
         allowFunction: 0
         value: UnitGroupVar
         options: []
+    - rid: 1014
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ModifyStatPercent
+        functionDescription: Unit/Combat/Modify Stat on Unit(s) by Percent
+        functionDynamicDescription: '$ $ of $ by $ for $ (Buff Name: $ | Max Stacks:
+          $)'
+        functionEvaluators:
+        - rid: 1016
+        - rid: 1017
+        - rid: 1021
+        - rid: 1022
+        - rid: 1024
+        - rid: 1025
+        - rid: 1026
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1016
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Decrease
+        options:
+        - Increase
+        - Decrease
+    - rid: 1017
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Damage
+        options:
+        - Damage
+        - Armor
+        - Damage Taken
+        - Attack Speed
+        - Max Health
+        - Max Resource
+        - Movement Speed
+        - Cooldown Reduction
+        - Ability Cost Reduction
+        - Resource Generation
+        - Critical Chance
+        - Critical Damage
+        - Vitality
     - rid: 1018
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -381,28 +424,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         allowSingleUnit: 0
-    - rid: 1019
-      type: {class: BuffNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Buff
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1004
-        parentNodeID: 1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 11400000, guid: a346bdaec54f43944893d09769e7adf1, type: 2}
-    - rid: 1020
+    - rid: 1021
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -411,9 +433,9 @@ MonoBehaviour:
         functionDescription: Unit Group Variable
         functionDynamicDescription: 'Unit Group: $'
         functionEvaluators:
-        - rid: 1021
+        - rid: 1027
         parentNode:
-          rid: 1004
+          rid: 1014
         parentNodeID: 2
         indent: 0
         presetName: Casting Unit
@@ -424,7 +446,28 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         allowSingleUnit: 0
-    - rid: 1021
+    - rid: 1022
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Percent
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 3
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 1023
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -446,7 +489,71 @@ MonoBehaviour:
         allowFunction: 1
         value: UnitGroupVar
         options: []
-    - rid: 1023
+    - rid: 1024
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 4
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 1025
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 5
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Weakening
+        options: []
+    - rid: 1026
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1014
+        parentNodeID: 6
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 1027
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -567,4 +674,4 @@ MonoBehaviour:
           - rid: 1006
           - rid: 1012
           - rid: 1001
-          - rid: 1004
+          - rid: 1014

@@ -20974,13 +20974,13 @@ MonoBehaviour:
   resourceMaterial: {fileID: 2100000, guid: 570c6c2d52340754c8559f925ca49b0d, type: 2}
   bonusDamagePerLevel: 5
   bonusHealthPerLevel: 15
-  bonusMovementSpeedPerLevel: 0.01
-  bonusResourcePerLevel: 5
-  bonusArmorPerLevel: 1
-  bonusCriticalChancePerLevel: 0.01
-  bonusCriticalDamagePerLevel: 0.05
-  bonusHealthRegenPerLevel: 1
-  bonusResourceRegenPerLevel: 1
+  bonusMovementSpeedPerLevel: 0
+  bonusResourcePerLevel: 0
+  bonusArmorPerLevel: 0
+  bonusCriticalChancePerLevel: 0
+  bonusCriticalDamagePerLevel: 0
+  bonusHealthRegenPerLevel: 0
+  bonusResourceRegenPerLevel: 0
 --- !u!195 &726264968
 NavMeshAgent:
   m_ObjectHideFlags: 0

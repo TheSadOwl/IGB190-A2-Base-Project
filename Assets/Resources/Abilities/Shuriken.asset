@@ -17,9 +17,9 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 02707f6c0ef84cd4db7f54d3bfeaa84f, type: 3}
   targetMode: 4
-  abilityDescription: Throw multiple shurikens towards the target location while
-    evading backwards, dealing 200% damage per projectile and decreasing damage of
-    hit enemies. In addition, gain 20 Stamina per projectile hit.
+  abilityDescription: Throw 3 shurikens towards the target location while evading
+    backwards, each dealing 200% damage and decreasing damage of hit enemies. In
+    addition, gain 10 Stamina per enemy hit.
   abilityAnimation: Roll
   range: 100
   castTime: 0
