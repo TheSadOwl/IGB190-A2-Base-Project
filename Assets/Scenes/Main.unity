@@ -66195,8 +66195,8 @@ MonoBehaviour:
     startingXPPerLevel: 50
     additionalMaxXPPerLevel: 25
   _monsterScalingValues:
-    increasedHealthPerPlayerLevel: 0.7
-    increasedDamagePerPlayerLevel: 1
+    increasedHealthPerPlayerLevel: 0.4
+    increasedDamagePerPlayerLevel: 0.2
   _healthGlobeValues:
     baseHealthGlobeChance: 0.25
     reducedChancePerExistingGlobe: 0.15

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Smoke Bomb
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Increase Unit's Movement Speed by 30% for 5s.
+  buffDescription: Increase damage and movement Speed by 30% for 5s.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 21300000, guid: a3182cf25867b174db197f69691d464d, type: 3}
@@ -22,13 +22,27 @@ MonoBehaviour:
   buffHasDuration: 1
   addingStacksRefreshesDuration: 1
   buffCurrentDuration: 0
-  buffMaxDuration: 3
+  buffMaxDuration: 5
   buffCurrentStacks: 1
   buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
   buffScale: 0
-  buffStatBonuses: []
+  buffStatBonuses:
+  - stat: 6
+    modifier:
+      Value: 0.3
+      RemoveAt: 60.409225
+      IsPercentage: 1
+      Label: 
+      Stacks: 1
+  - stat: 0
+    modifier:
+      Value: 0.3
+      RemoveAt: 94.88223
+      IsPercentage: 1
+      Label: 
+      Stacks: 1
   visualEffect: {fileID: 8533393150286504485, guid: 7fe62ceec2c82364fb0ddada6f92d937, type: 3}
   owner: {fileID: 0}
   applier: {fileID: 0}
