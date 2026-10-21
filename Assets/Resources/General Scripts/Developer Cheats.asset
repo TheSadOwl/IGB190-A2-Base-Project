@@ -392,7 +392,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 10
+        value: 7
     - rid: 1009
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:

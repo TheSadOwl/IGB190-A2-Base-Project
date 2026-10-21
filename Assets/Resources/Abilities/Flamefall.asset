@@ -1194,7 +1194,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1053
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1325,7 +1325,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1059
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1456,7 +1456,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1065
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1587,7 +1587,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1071
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1958,7 +1958,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1088
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -2089,7 +2089,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1094
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -2220,7 +2220,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1100
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -2351,7 +2351,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 1106
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
