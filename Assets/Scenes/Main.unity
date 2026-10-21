@@ -16495,7 +16495,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 64
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -66151,7 +66151,7 @@ MonoBehaviour:
   _settings:
     graphicsQuality: 5
     masterVolume: 0.5
-    musicVolume: 0.2
+    musicVolume: 1
     effectsVolume: 0.5
     showTutorialMessages: 1
     showDamageNumbers: 1
@@ -103215,7 +103215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: unitName
-      value: Boss
+      value: Soul Sorcerer
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: baseArmor
@@ -103223,7 +103223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: baseDamage
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: baseMaxHealth
@@ -103231,12 +103231,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: abilities.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: baseAttacksPerSecond
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: 'abilities.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d259de0e0e3d9ef4f86ca2d32394b13f, type: 2}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: 'abilities.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: 4316fde4184cdcd4991a88f9e421bde8, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f5a643269b552c4586bd9cabd56b69e, type: 2}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_RootOrder
       value: 17
