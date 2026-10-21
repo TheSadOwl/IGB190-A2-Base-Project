@@ -66063,9 +66063,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1998604230}
-  - component: {fileID: 1998604229}
   - component: {fileID: 1998604233}
   - component: {fileID: 1998604231}
+  - component: {fileID: 1998604229}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -103231,7 +103231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: abilities.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: baseAttacksPerSecond
@@ -103243,6 +103243,10 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: d259de0e0e3d9ef4f86ca2d32394b13f, type: 2}
     - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: 'abilities.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 63144ed1cf16b584f85658b011e0a7cd, type: 2}
+    - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: 'abilities.Array.data[3]'
       value: 
       objectReference: {fileID: 11400000, guid: 7f5a643269b552c4586bd9cabd56b69e, type: 2}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
