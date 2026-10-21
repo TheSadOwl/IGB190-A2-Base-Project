@@ -30630,13 +30630,17 @@ PrefabInstance:
       value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
+      propertyPath: unitCanBeForceMoved
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: 'abilities.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: ed5d29ba59bddec45a4306c3500f51c8, type: 2}
+      objectReference: {fileID: 11400000, guid: a39d42e88a196084f979c0593f8a8433, type: 2}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: 'abilities.Array.data[1]'
       value: 
@@ -159186,7 +159190,13 @@ Animator:
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+    'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+    'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+    'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:RightArm'\n\tTransform
+    'mixamorig:LeftLeg'\n\tand more ...\n\tFrom animation clip 'Backflip'"
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0

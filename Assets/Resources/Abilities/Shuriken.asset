@@ -17,13 +17,14 @@ MonoBehaviour:
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 02707f6c0ef84cd4db7f54d3bfeaa84f, type: 3}
   targetMode: 4
-  abilityDescription: Throw a shuriken towards the target location dealing 200% damage,
-    decreasing damage of hit enemies. If the ability hits a target, gain 20 Stamina.
-  abilityAnimation: Punch
+  abilityDescription: Throw multiple shurikens towards the target location while
+    evading backwards, dealing 200% damage per projectile and decreasing damage of
+    hit enemies. In addition, gain 20 Stamina per projectile hit.
+  abilityAnimation: Roll
   range: 100
   castTime: 0
   abilityCooldown: 5
-  abilityCost: 0
+  abilityCost: 20
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 1
@@ -431,7 +432,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 20
+        value: 40
     - rid: 1017
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -452,7 +453,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 2
     - rid: 1018
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -783,7 +784,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 20
+        value: 10
     - rid: 1033
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1606,7 +1607,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 7
     - rid: 1079
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1648,7 +1649,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.35
+        value: 0.05
     - rid: 123489724181774467
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:

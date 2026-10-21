@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: Backstab
+  m_Name: Shadestep
   m_EditorClassIdentifier: 
   engine:
     rid: 123489723703361795
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: 832f5387d63fe1e45ae1a2513eb95570, type: 3}
   targetMode: 4
-  abilityDescription: Instantly teleport towards the target location, dealing 250%
-    damage and stunning nearby enemies. If you kill an enemy, reduce cooldown by
-    5s.
+  abilityDescription: Instantly teleport towards the target location, dealing 410%
+    damage and stunning nearby enemies, while becoming briefly invincible. Whenever
+    you kill an enemy, reduce cooldown by 2s.
   abilityAnimation: One Hand Slash
   range: 6
   castTime: 0
-  abilityCooldown: 10
+  abilityCooldown: 6
   abilityCost: 20
   movementLock: 1
   animationActivationPosition: 0.5
@@ -438,7 +438,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 250
+        value: 410
     - rid: 1018
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -631,7 +631,7 @@ MonoBehaviour:
           rid: 1024
         parentNodeID: 1
         indent: 0
-        presetName: Killing Unit
+        presetName: Ability Owner
         variableName: 
         stringSuffix: 
         nodeIcon: 
@@ -660,6 +660,93 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {x: 0, y: 0, z: 0}
+    - rid: 1028
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ModifyStatPercent
+        functionDescription: Unit/Combat/Modify Stat on Unit(s) by Percent
+        functionDynamicDescription: '$ $ of $ by $ for $ (Buff Name: $ | Max Stacks:
+          $)'
+        functionEvaluators:
+        - rid: 1029
+        - rid: 1030
+        - rid: 1040
+        - rid: 1041
+        - rid: 1042
+        - rid: 1043
+        - rid: 1045
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1029
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Decrease
+        options:
+        - Increase
+        - Decrease
+    - rid: 1030
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Damage Taken
+        options:
+        - Damage
+        - Armor
+        - Damage Taken
+        - Attack Speed
+        - Max Health
+        - Max Resource
+        - Movement Speed
+        - Cooldown Reduction
+        - Ability Cost Reduction
+        - Resource Generation
+        - Critical Chance
+        - Critical Damage
+        - Vitality
     - rid: 1031
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -680,7 +767,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 2
     - rid: 1032
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -858,6 +945,91 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         allowSingleUnit: 0
+    - rid: 1040
+      type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit(s)
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 2
+        indent: 0
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        allowSingleUnit: 0
+    - rid: 1041
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Percent
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 3
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 1042
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 4
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0.75
+    - rid: 1043
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 5
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Invincibility
+        options: []
     - rid: 1044
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -880,6 +1052,27 @@ MonoBehaviour:
         allowFunction: 1
         value: UnitGroupVar
         options: []
+    - rid: 1045
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1028
+        parentNodeID: 6
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
     - rid: 123489723703361795
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -894,6 +1087,7 @@ MonoBehaviour:
           - rid: 1009
           actionNodes:
           - rid: 1032
+          - rid: 1028
           - rid: 1037
           - rid: 1016
           - rid: 1010
