@@ -125,7 +125,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 3
     - rid: 123489907132072111
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
