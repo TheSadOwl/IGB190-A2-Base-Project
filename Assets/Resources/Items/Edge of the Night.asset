@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: A blade that has seen deadly use during nightfall.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: a60d7214b3cad2e4b94d312daeda3185, type: 3}
+  itemIcon: {fileID: 21300000, guid: 12c64cb83fa380948aab0a16b32c4c2d, type: 3}
   itemType: 2
   itemRarity: 1
   itemCost: 250
@@ -38,27 +38,15 @@ MonoBehaviour:
   randomisableStats:
   - stat: 0
     minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
-  - stat: 1
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
-  - stat: 2
+  - stat: 3
     minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
-  - stat: 4
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
-  - stat: 6
+  - stat: 9
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
-  - stat: 12
-    minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
   minimumDropLevel: 1
   canPurchaseInShop: 1

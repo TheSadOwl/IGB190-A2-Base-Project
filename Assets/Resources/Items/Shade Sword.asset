@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: A shady sword that feels fairly light.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 09b62cca23038b9438555a6258a5c0ca, type: 3}
+  itemIcon: {fileID: 21300000, guid: 58de0f853567251459d263687c2334c5, type: 3}
   itemType: 2
   itemRarity: 0
   itemCost: 100

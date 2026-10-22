@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: A blade absorbed with shadow essence.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 63bbf1e1658caa346b0e6300b0209f45, type: 3}
+  itemIcon: {fileID: 21300000, guid: cd561c00f4b4c6945a4be4fbb9182ab9, type: 3}
   itemType: 2
   itemRarity: 1
   itemCost: 250
@@ -40,38 +40,18 @@ MonoBehaviour:
     maximum: 0.06
     isPercent: 1
   randomisableStats:
-  - stat: 0
+  - stat: 3
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
-  - stat: 1
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
-  - stat: 2
-    minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
-  - stat: 4
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
-  - stat: 6
-    minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
   - stat: 10
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 0
-  - stat: 11
-    minimum: 0.05
-    maximum: 0.1
+    maximum: 0.03
     isPercent: 0
   - stat: 12
-    minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
+    minimum: 1
+    maximum: 3
+    isPercent: 0
   minimumDropLevel: 1
   canPurchaseInShop: 1
   canDropOffMonster: 1

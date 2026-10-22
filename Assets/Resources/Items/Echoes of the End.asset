@@ -17,7 +17,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: Whispers of the end times.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 33ebab032307d64478a8023413e8a718, type: 3}
+  itemIcon: {fileID: 21300000, guid: 089cbcee2bc33c440bf2a2b590ac4432, type: 3}
   itemType: 2
   itemRarity: 2
   itemCost: 500
@@ -41,33 +41,17 @@ MonoBehaviour:
     maximum: 3
     isPercent: 0
   randomisableStats:
-  - stat: 1
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 2
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
-  - stat: 4
-    minimum: 0.1
-    maximum: 0.15
-    isPercent: 1
-  - stat: 6
-    minimum: 0.05
-    maximum: 0.1
-    isPercent: 1
   - stat: 11
-    minimum: 0.1
-    maximum: 0.15
+    minimum: 0.01
+    maximum: 0.03
     isPercent: 0
-  - stat: 12
-    minimum: 0.05
-    maximum: 0.1
+  - stat: 1
+    minimum: 0.01
+    maximum: 0.03
     isPercent: 1
-  - stat: 10
-    minimum: 0.05
-    maximum: 0.1
+  - stat: 12
+    minimum: 1
+    maximum: 3
     isPercent: 0
   minimumDropLevel: 3
   canPurchaseInShop: 1

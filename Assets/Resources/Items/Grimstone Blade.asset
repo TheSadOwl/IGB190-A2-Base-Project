@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: Forged with a hardened metal known as Grimstone.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 2f9cb5e61c98b134cbd79948006814f5, type: 3}
+  itemIcon: {fileID: 21300000, guid: 2e600bf96253b764aa7a79db44fce724, type: 3}
   itemType: 2
   itemRarity: 0
   itemCost: 100
