@@ -36,7 +36,7 @@ MonoBehaviour:
     maximum: 0.11
     isPercent: 1
   randomisableStats: []
-  minimumDropLevel: 0
+  minimumDropLevel: 1
   canPurchaseInShop: 1
   canDropOffMonster: 1
   template: {fileID: 0}
