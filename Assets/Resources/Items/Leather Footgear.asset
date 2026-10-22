@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: Basic leather footwear.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
+  itemIcon: {fileID: 21300000, guid: 12c812f5e02174340be4f27f189053a8, type: 3}
   itemType: 4
   itemRarity: 0
   itemCost: 100

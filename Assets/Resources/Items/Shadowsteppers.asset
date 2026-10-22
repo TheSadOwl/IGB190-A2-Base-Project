@@ -17,7 +17,7 @@ MonoBehaviour:
   itemFlavourText: It is said that whomever wears these boots is able to step into
     the shadow realm.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 0e92c4172a174484789fe64de1d037ef, type: 3}
+  itemIcon: {fileID: 21300000, guid: eea6272fbb0abfb4a867d7a36354196b, type: 3}
   itemType: 4
   itemRarity: 1
   itemCost: 250
@@ -47,20 +47,16 @@ MonoBehaviour:
   randomisableStats:
   - stat: 1
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 1
-  - stat: 4
-    minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
   - stat: 10
     minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 0
-  - stat: 11
+  - stat: 2
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 0
+    maximum: 0.03
+    isPercent: 1
   minimumDropLevel: 1
   canPurchaseInShop: 1
   canDropOffMonster: 1

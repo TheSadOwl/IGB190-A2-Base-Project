@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: The wearer moves so fast they blur like the wind.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
+  itemIcon: {fileID: 21300000, guid: f9e7357e71d61514abfe1cc676c18d66, type: 3}
   itemType: 4
   itemRarity: 2
   itemCost: 500
@@ -38,20 +38,16 @@ MonoBehaviour:
   randomisableStats:
   - stat: 1
     minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
-  - stat: 4
+  - stat: 7
     minimum: 0.01
-    maximum: 0.05
+    maximum: 0.03
     isPercent: 1
-  - stat: 10
+  - stat: 2
     minimum: 0.01
-    maximum: 0.05
-    isPercent: 0
-  - stat: 11
-    minimum: 0.01
-    maximum: 0.05
-    isPercent: 0
+    maximum: 0.03
+    isPercent: 1
   minimumDropLevel: 3
   canPurchaseInShop: 1
   canDropOffMonster: 1

@@ -16,7 +16,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: An impossibly old artifact, granting you its magical affinities.
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 371f7aca98ca60744bebba125976b879, type: 3}
+  itemIcon: {fileID: 21300000, guid: ed05a7e7cdc1bd443a13a901586e81d6, type: 3}
   itemType: 1
   itemRarity: 1
   itemCost: 250
