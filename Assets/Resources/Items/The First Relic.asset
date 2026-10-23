@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: The First Relic
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Using an ability after not using any abilities for 5s, boosts
-    your damage by 100% for 10s.
+  itemDescription: Casting an ability after not casting any abilities for 5s, boosts
+    your damage by 50% for 5s.
   itemTag: 
   itemFlavourText: A relic of the past, likely the first of its kind.
   classRequirement: 

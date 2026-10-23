@@ -10,32 +10,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
-  m_Name: Echo
+  m_Name: Dark Drain
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Echoes of the End is on Cooldown.
+  buffDescription: Decreases movement speed by 50% for 7s.
   buffFlavourText: 
   buffTag: 
-  buffIcon: {fileID: 21300000, guid: 33ebab032307d64478a8023413e8a718, type: 3}
-  buffType: 0
+  buffIcon: {fileID: 21300000, guid: 9b6c65a006c95c14da84b561b06b3dec, type: 3}
+  buffType: 1
   buffRemovedOnDeath: 1
   buffVisibleInUI: 1
   buffHasDuration: 1
   addingStacksRefreshesDuration: 1
   buffCurrentDuration: 0
-  buffMaxDuration: 1
+  buffMaxDuration: 7
   buffCurrentStacks: 1
   buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
   buffScale: 0
-  buffStatBonuses: []
+  buffStatBonuses:
+  - stat: 6
+    modifier:
+      Value: -0.5
+      RemoveAt: 46.292484
+      IsPercentage: 1
+      Label: 
+      Stacks: 1
   visualEffect: {fileID: 0}
   owner: {fileID: 0}
   applier: {fileID: 0}
   engine:
     scripts:
     - scriptName: Main
-      scriptUID: 1810268697
+      scriptUID: 1830138365
       hasWait: 0
       reportErrors: 1
       eventNodes: []

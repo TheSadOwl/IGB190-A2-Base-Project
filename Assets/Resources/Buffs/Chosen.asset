@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Chosen
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Increases max resource by 10% and resource regeneration by 10%
-    per stack.
+  buffDescription: Increases max resource by 50% and resource generation by 100%
+    for 5s.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 1266082386, guid: aa6eceab29ed221468872af3d972339a, type: 3}
@@ -25,14 +25,14 @@ MonoBehaviour:
   buffCurrentDuration: 0
   buffMaxDuration: 5
   buffCurrentStacks: 1
-  buffMaximumStacks: 10
+  buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
   buffScale: 1
   buffStatBonuses:
   - stat: 5
     modifier:
-      Value: 1
+      Value: 0.5
       RemoveAt: 0
       IsPercentage: 1
       Label: 

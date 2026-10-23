@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Calamitous Chaos
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Using an ability damages enemies around you, scaling with resource
+  itemDescription: Casting an ability damages enemies around you, scaling with resource
     cost.
   itemTag: 
   itemFlavourText: The cataclysm is imminent and doom is impending...
@@ -447,8 +447,8 @@ MonoBehaviour:
         functionDescription: Math/Division
         functionDynamicDescription: $ / $
         functionEvaluators:
-        - rid: 1020
         - rid: 1021
+        - rid: 1033
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -541,49 +541,6 @@ MonoBehaviour:
         - Critical Damage
         - Vitality
     - rid: 1020
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: GetNumberVariable
-        functionDescription: Variable/Number Variable
-        functionDynamicDescription: 'Number Variable: $'
-        functionEvaluators:
-        - rid: 1022
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 1021
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 100
-    - rid: 1022
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -605,6 +562,28 @@ MonoBehaviour:
         allowFunction: 0
         value: Cost
         options: []
+    - rid: 1021
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: GetNumberVariable
+        functionDescription: Variable/Number Variable
+        functionDynamicDescription: 'Number Variable: $'
+        functionEvaluators:
+        - rid: 1020
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
     - rid: 1023
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
@@ -765,7 +744,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 1619546016144717944, guid: aad805fa222a18d4bbd200af24c6e163, type: 3}
+        value: {fileID: 156460554333174876, guid: 450b39c41ce70d24b8993c4ec4e96da4, type: 3}
     - rid: 1030
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
@@ -824,6 +803,27 @@ MonoBehaviour:
         presetName: 
         variableName: 
         stringSuffix: x
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1033
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
         nodeIcon: 
         allowValue: 1
         allowPreset: 1

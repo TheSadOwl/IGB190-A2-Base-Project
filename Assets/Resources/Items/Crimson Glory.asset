@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Crimson Glory
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Killling an enemy applies the Glory buff, increasing movement
-    speed by 20% per stack and healing 5% of max health.
+  itemDescription: Killing an enemy applies the Glory buff, increasing movement speed
+    by 10% per stack and healing 3% of max health.
   itemTag: 
   itemFlavourText: A glorious piece of armour adorned in a fiery red hue.
   classRequirement: 
@@ -407,7 +407,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.05
+        value: 0.03
     - rid: 1014
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:

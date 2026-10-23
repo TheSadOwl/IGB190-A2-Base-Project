@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Aqueous
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Increases movement speed by 20% per stack and reduces damage taken
-    by 25%.
+  buffDescription: Increases movement speed by 25% and reduces damage taken by 20%
+    for 5s.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 1520309570, guid: aa6eceab29ed221468872af3d972339a, type: 3}
@@ -23,27 +23,27 @@ MonoBehaviour:
   buffHasDuration: 1
   addingStacksRefreshesDuration: 1
   buffCurrentDuration: 0
-  buffMaxDuration: 10
+  buffMaxDuration: 5
   buffCurrentStacks: 1
-  buffMaximumStacks: 5
+  buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
   buffScale: 1
   buffStatBonuses:
   - stat: 6
     modifier:
-      Value: 0.2
-      RemoveAt: 0
+      Value: 0.25
+      RemoveAt: 29.258453
       IsPercentage: 1
       Label: 
-      Stacks: 0
+      Stacks: 1
   - stat: 2
     modifier:
       Value: 0.2
-      RemoveAt: 0
+      RemoveAt: 35.834076
       IsPercentage: 1
       Label: 
-      Stacks: 0
+      Stacks: 1
   visualEffect: {fileID: 0}
   owner: {fileID: 0}
   applier: {fileID: 0}
