@@ -34,7 +34,7 @@ MonoBehaviour:
   canUpdateTargetWhileCasting: 0
   castAtClosestPointInRange: 1
   castCompleteSound: {fileID: 8300000, guid: ab297b593498a6e47ba84de770477cbe, type: 3}
-  castCompleteSoundVolume: 0.7
+  castCompleteSoundVolume: 1
   needsReminderFlash: 0
   isUnlocked: 1
   abilityTag: 

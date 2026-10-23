@@ -194,7 +194,7 @@ MonoBehaviour:
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
   unitName: Skeleton
-  baseDamage: 15
+  baseDamage: 10
   baseAttacksPerSecond: 2
   baseMaxHealth: 100
   baseMaxResource: 100
