@@ -14717,7 +14717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   empoweredMonsters: 2
   spawnDensity: 1
-  maximumSpawnLevel: 2
+  maximumSpawnLevel: 1
 --- !u!65 &446772364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18842,11 +18842,11 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Mana
   resourceMaterial: {fileID: 2100000, guid: dd6dc55119cde6f4ab2a8561e505a971, type: 2}
-  bonusDamagePerLevel: 5
-  bonusHealthPerLevel: 15
+  bonusDamagePerLevel: 3
+  bonusHealthPerLevel: 20
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
-  bonusArmorPerLevel: 0
+  bonusArmorPerLevel: 3
   bonusCriticalChancePerLevel: 0
   bonusCriticalDamagePerLevel: 0
   bonusHealthRegenPerLevel: 0
@@ -20972,11 +20972,11 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Stamina
   resourceMaterial: {fileID: 2100000, guid: 570c6c2d52340754c8559f925ca49b0d, type: 2}
-  bonusDamagePerLevel: 5
-  bonusHealthPerLevel: 15
+  bonusDamagePerLevel: 3
+  bonusHealthPerLevel: 20
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
-  bonusArmorPerLevel: 0
+  bonusArmorPerLevel: 3
   bonusCriticalChancePerLevel: 0
   bonusCriticalDamagePerLevel: 0
   bonusHealthRegenPerLevel: 0
@@ -33039,11 +33039,11 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Rage
   resourceMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
-  bonusDamagePerLevel: 5
-  bonusHealthPerLevel: 15
+  bonusDamagePerLevel: 3
+  bonusHealthPerLevel: 20
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
-  bonusArmorPerLevel: 0
+  bonusArmorPerLevel: 3
   bonusCriticalChancePerLevel: 0
   bonusCriticalDamagePerLevel: 0
   bonusHealthRegenPerLevel: 0
@@ -35639,8 +35639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empoweredMonsters: 4
-  spawnDensity: 4
-  maximumSpawnLevel: 3
+  spawnDensity: 3
+  maximumSpawnLevel: 2
 --- !u!65 &1158449324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43841,7 +43841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: baseMaxHealth
-      value: 1000
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
@@ -62376,11 +62376,11 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
   resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
-  bonusDamagePerLevel: 5
-  bonusHealthPerLevel: 15
+  bonusDamagePerLevel: 3
+  bonusHealthPerLevel: 20
   bonusMovementSpeedPerLevel: 0
   bonusResourcePerLevel: 0
-  bonusArmorPerLevel: 0
+  bonusArmorPerLevel: 3
   bonusCriticalChancePerLevel: 0
   bonusCriticalDamagePerLevel: 0
   bonusHealthRegenPerLevel: 0
@@ -64615,7 +64615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: baseMaxHealth
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5184449006530483668, guid: caef50e694e10204c993186864e4cc23, type: 3}
       propertyPath: abilities.Array.size
@@ -66203,8 +66203,8 @@ MonoBehaviour:
     startingXPPerLevel: 50
     additionalMaxXPPerLevel: 25
   _monsterScalingValues:
-    increasedHealthPerPlayerLevel: 0.4
-    increasedDamagePerPlayerLevel: 0.2
+    increasedHealthPerPlayerLevel: 0.3
+    increasedDamagePerPlayerLevel: 0.1
   _healthGlobeValues:
     baseHealthGlobeChance: 0.25
     reducedChancePerExistingGlobe: 0.15
