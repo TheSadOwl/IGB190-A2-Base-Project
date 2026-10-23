@@ -18,13 +18,13 @@ MonoBehaviour:
   abilityIcon: {fileID: 21300000, guid: 02707f6c0ef84cd4db7f54d3bfeaa84f, type: 3}
   targetMode: 4
   abilityDescription: Throw 3 shurikens towards the target location while evading
-    backwards, each dealing 200% damage and decreasing damage of hit enemies. In
-    addition, gain 10 Stamina per enemy hit.
+    backwards, each dealing 50% damage and decreasing damage of hit enemies. In addition,
+    gain 10 Stamina per enemy hit.
   abilityAnimation: Roll
   range: 100
   castTime: 0
   abilityCooldown: 5
-  abilityCost: 20
+  abilityCost: 0
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 1
@@ -411,7 +411,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 200
+        value: 50
     - rid: 1016
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 7
+        value: 4
     - rid: 1079
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1649,7 +1649,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.05
+        value: 0.1
     - rid: 123489724181774467
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
