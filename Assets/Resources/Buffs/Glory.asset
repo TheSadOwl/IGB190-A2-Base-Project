@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Glory
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Increase Move Speed by 20% per Stack
+  buffDescription: Increases movement speed by 10% per stack up to 50%.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 1397435139, guid: aa6eceab29ed221468872af3d972339a, type: 3}
@@ -24,14 +24,14 @@ MonoBehaviour:
   buffCurrentDuration: 0
   buffMaxDuration: 10
   buffCurrentStacks: 1
-  buffMaximumStacks: 10
+  buffMaximumStacks: 5
   buffEffectOnTarget: {fileID: 0}
   buffAttachPoint: Cast Point
   buffScale: 1
   buffStatBonuses:
   - stat: 6
     modifier:
-      Value: 0.2
+      Value: 0.1
       RemoveAt: 0
       IsPercentage: 1
       Label: 

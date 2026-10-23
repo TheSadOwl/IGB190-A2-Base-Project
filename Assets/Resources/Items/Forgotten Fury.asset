@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Forgotten Fury
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: Increases damage by 25% and attack speed by 10% for 5s after casting
-    an expensive ability.
+  itemDescription: Increases damage by 20% and attack speed by 10% for 5s after casting
+    a strong ability.
   itemTag: 
   itemFlavourText: A weapon belonging to a lost warrior whose rage still lingers
     in the blade.
