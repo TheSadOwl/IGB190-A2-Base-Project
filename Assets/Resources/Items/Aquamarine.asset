@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aquamarine
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemDescription: Casting a strong ability applies the Aqueous buff, increasing
-    movement speed by 10% and reducing damage taken by 5% per stack.
+    movement speed by 25% and reducing damage taken by 20% for 5s.
   itemTag: 
   itemFlavourText: A prismatic shine radiates from within.
   classRequirement: 

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
   m_Name: Ferocious Claws
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  itemDescription: When enemies are stunned, increase attack speed by 10%.
+  itemDescription: Increases attack speed by 10% for 5s when at least 1 enemy is
+    stunned.
   itemTag: 
   itemFlavourText: The claws of a feral beast.
   classRequirement: 
@@ -79,7 +80,7 @@ MonoBehaviour:
       hasWait: 0
       reportErrors: 1
       eventNodes:
-      - rid: 1003
+      - rid: 1016
       conditionNodes: []
       actionNodes:
       - rid: 1000
@@ -155,27 +156,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         allowSingleUnit: 0
-    - rid: 1003
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: EveryFrame
-        functionDescription: Time/Do every frame
-        functionDynamicDescription: Do actions every frame
-        functionEvaluators: []
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: Timer
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets: []
     - rid: 1004
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -455,7 +435,50 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 10
+        value: 1
+    - rid: 1016
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnTimerFinished
+        functionDescription: Time/Do every X Seconds
+        functionDynamicDescription: Every $ seconds
+        functionEvaluators:
+        - rid: 1017
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 1017
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1016
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0.5
     - rid: 7642462657391624279
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:

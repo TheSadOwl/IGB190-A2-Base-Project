@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Patience Reward
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Reward for your Patience, gain 100% Attack Damage.
-  buffFlavourText: 
+  buffDescription: Increases damage by 50% for 5s.
+  buffFlavourText: A reward for your patience.
   buffTag: 
   buffIcon: {fileID: -1991200984, guid: aa6eceab29ed221468872af3d972339a, type: 3}
   buffType: 0
@@ -22,7 +22,7 @@ MonoBehaviour:
   buffHasDuration: 1
   addingStacksRefreshesDuration: 0
   buffCurrentDuration: 0
-  buffMaxDuration: 10
+  buffMaxDuration: 5
   buffCurrentStacks: 1
   buffMaximumStacks: 1
   buffEffectOnTarget: {fileID: 0}
@@ -31,7 +31,7 @@ MonoBehaviour:
   buffStatBonuses:
   - stat: 0
     modifier:
-      Value: 1
+      Value: 0.5
       RemoveAt: 0
       IsPercentage: 1
       Label: 

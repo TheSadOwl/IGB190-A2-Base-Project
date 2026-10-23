@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6688e2940d1ee64894af667a197af7e, type: 3}
   m_Name: Patience
   m_EditorClassIdentifier: Assembly-CSharp::Buff
-  buffDescription: Wait the amount for an reward.
+  buffDescription: Wait 5s without casting an ability for a reward.
   buffFlavourText: 
   buffTag: 
   buffIcon: {fileID: 21300000, guid: 04e548e042b65c744a6a1d856150f0a8, type: 3}
